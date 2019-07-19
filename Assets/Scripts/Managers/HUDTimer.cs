@@ -15,7 +15,6 @@ public class HUDTimer : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(countdown);
         if(countdown > 1)
         {
             countdown -= Time.deltaTime;
