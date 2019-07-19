@@ -41,6 +41,12 @@ public class CatMovement : MonoBehaviour
             }
         }
 
+        // Block movement inputs if on main menu
+        if (MainMenu.onMainMenu)
+        {
+            return;
+        }
+
 
         //Sit animation
         if (Input.GetButton("Fire2"))
