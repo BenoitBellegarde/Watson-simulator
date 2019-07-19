@@ -1,0 +1,1219 @@
+fileFormatVersion: 2
+guid: 3b7ee2b62258b56468ceadda11ee3665
+timeCreated: 1493908980
+licenseType: Store
+SubstanceImporter:
+  serializedVersion: 5
+  materialInstances:
+  - serializedVersion: 16
+    name: Floor_Tiles
+    prototypeName: Floor_Tiles
+    shaderName: 
+    shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+    shaderKeywords: 
+    renderQueue: -1
+    lightmapFlags: 5
+    inputs:
+    - name: Tile_X
+      value:
+        scalar[0]: 24
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Tile_Y
+      value:
+        scalar[0]: 12
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: $outputsize
+      value:
+        scalar[0]: 8
+        scalar[1]: 8
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: $randomseed
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Damage_On
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Point_Damage_Tile_X
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Point_Damage_Tile_Y
+      value:
+        scalar[0]: 9
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Point_Damage_Power
+      value:
+        scalar[0]: 2.04
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Cracks_Nb_X
+      value:
+        scalar[0]: 6
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Cracks_Nb_Y
+      value:
+        scalar[0]: 6
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Cracks_Width
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: amount_of_broken_parts
+      value:
+        scalar[0]: 0.5
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Broken_Tiles_Number_X
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Broken_Tiles_Number_Y
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Input_Pattern
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Tiles_Color
+      value:
+        scalar[0]: 0.576471
+        scalar[1]: 0.643137
+        scalar[2]: 0.623529
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Input_Image_On_Off
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    materialInformation:
+      serializedVersion: 5
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      generateMipmaps: 1
+      generateAllOutputs: 0
+      animationUpdateRate: 0
+    materialProperties:
+      serializedVersion: 2
+      texEnvs:
+      - first:
+          name: _BumpMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _DetailAlbedoMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _DetailMask
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _DetailNormalMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _EmissionMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _MainTex
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _MetallicGlossMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _OcclusionMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _ParallaxMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      floats:
+      - first:
+          name: _BumpScale
+        second: 1
+      - first:
+          name: _Cutoff
+        second: 0.5
+      - first:
+          name: _DetailNormalMapScale
+        second: 1
+      - first:
+          name: _DstBlend
+        second: 0
+      - first:
+          name: _GlossMapScale
+        second: 1
+      - first:
+          name: _Glossiness
+        second: 0.5
+      - first:
+          name: _GlossyReflections
+        second: 1
+      - first:
+          name: _Metallic
+        second: 0
+      - first:
+          name: _Mode
+        second: 0
+      - first:
+          name: _OcclusionStrength
+        second: 1
+      - first:
+          name: _Parallax
+        second: 0.02
+      - first:
+          name: _SmoothnessTextureChannel
+        second: 0
+      - first:
+          name: _SpecularHighlights
+        second: 1
+      - first:
+          name: _SrcBlend
+        second: 1
+      - first:
+          name: _UVSec
+        second: 0
+      - first:
+          name: _ZWrite
+        second: 1
+      colors:
+      - first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      - first:
+          name: _EmissionColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+    textureParameters:
+    - name: Floor_Tiles_basecolor
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Floor_Tiles_normal
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Floor_Tiles_metallic
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Floor_Tiles_height
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Floor_Tiles_Ambient_Occlusion
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    textureAssignments:
+    - shaderProp:
+        name: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 973816875
+    - shaderProp:
+        name: _MainTex
+      material: {instanceID: 0}
+      baseUID: 973816873
+    - shaderProp:
+        name: _MetallicGlossMap
+      material: {instanceID: 0}
+      baseUID: 973816879
+    - shaderProp:
+        name: _OcclusionMap
+      material: {instanceID: 0}
+      baseUID: 1052931155
+    - shaderProp:
+        name: _ParallaxMap
+      material: {instanceID: 0}
+      baseUID: 1046769374
+    buildTargetSettings:
+    - serializedVersion: 2
+      buildTarget: 
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 1
+      loadingBehavior: 1
+  - serializedVersion: 16
+    name: Floor_Tiles_1
+    prototypeName: Floor_Tiles
+    shaderName: 
+    shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+    shaderKeywords: 
+    renderQueue: -1
+    lightmapFlags: 5
+    inputs:
+    - name: $outputsize
+      value:
+        scalar[0]: 8
+        scalar[1]: 8
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: $randomseed
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Tile_X
+      value:
+        scalar[0]: 24
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Tile_Y
+      value:
+        scalar[0]: 12
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Damage_On
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Point_Damage_Tile_X
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Point_Damage_Tile_Y
+      value:
+        scalar[0]: 9
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Point_Damage_Power
+      value:
+        scalar[0]: 2.04
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Cracks_Nb_X
+      value:
+        scalar[0]: 6
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Cracks_Nb_Y
+      value:
+        scalar[0]: 6
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Cracks_Width
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: amount_of_broken_parts
+      value:
+        scalar[0]: 0.5
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Broken_Tiles_Number_X
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Broken_Tiles_Number_Y
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Input_Pattern
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Tiles_Color
+      value:
+        scalar[0]: 0.576471
+        scalar[1]: 0.643137
+        scalar[2]: 0.623529
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Input_Image_On_Off
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    materialInformation:
+      serializedVersion: 5
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      generateMipmaps: 1
+      generateAllOutputs: 0
+      animationUpdateRate: 0
+    materialProperties:
+      serializedVersion: 2
+      texEnvs:
+      - first:
+          name: _BumpMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _DetailAlbedoMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _DetailMask
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _DetailNormalMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _EmissionMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _MainTex
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _MetallicGlossMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _OcclusionMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _ParallaxMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      floats:
+      - first:
+          name: _BumpScale
+        second: 1
+      - first:
+          name: _Cutoff
+        second: 0.5
+      - first:
+          name: _DetailNormalMapScale
+        second: 1
+      - first:
+          name: _DstBlend
+        second: 0
+      - first:
+          name: _GlossMapScale
+        second: 1
+      - first:
+          name: _Glossiness
+        second: 0.5
+      - first:
+          name: _GlossyReflections
+        second: 1
+      - first:
+          name: _Metallic
+        second: 0
+      - first:
+          name: _Mode
+        second: 0
+      - first:
+          name: _OcclusionStrength
+        second: 1
+      - first:
+          name: _Parallax
+        second: 0.02
+      - first:
+          name: _SmoothnessTextureChannel
+        second: 0
+      - first:
+          name: _SpecularHighlights
+        second: 1
+      - first:
+          name: _SrcBlend
+        second: 1
+      - first:
+          name: _UVSec
+        second: 0
+      - first:
+          name: _ZWrite
+        second: 1
+      colors:
+      - first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      - first:
+          name: _EmissionColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+    textureParameters:
+    - name: Floor_Tiles_1_basecolor
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Floor_Tiles_1_normal
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Floor_Tiles_1_metallic
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Floor_Tiles_1_height
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Floor_Tiles_1_Ambient_Occlusion
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    textureAssignments:
+    - shaderProp:
+        name: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 973816875
+    - shaderProp:
+        name: _MainTex
+      material: {instanceID: 0}
+      baseUID: 973816873
+    - shaderProp:
+        name: _MetallicGlossMap
+      material: {instanceID: 0}
+      baseUID: 973816879
+    - shaderProp:
+        name: _OcclusionMap
+      material: {instanceID: 0}
+      baseUID: 1052931155
+    - shaderProp:
+        name: _ParallaxMap
+      material: {instanceID: 0}
+      baseUID: 1046769374
+    buildTargetSettings:
+    - serializedVersion: 2
+      buildTarget: 
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 1
+      loadingBehavior: 1
+  - serializedVersion: 16
+    name: Floor_Tiles_2
+    prototypeName: Floor_Tiles
+    shaderName: 
+    shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+    shaderKeywords: 
+    renderQueue: -1
+    lightmapFlags: 5
+    inputs:
+    - name: $outputsize
+      value:
+        scalar[0]: 8
+        scalar[1]: 8
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: $randomseed
+      value:
+        scalar[0]: 4626
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Tile_X
+      value:
+        scalar[0]: 24
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Tile_Y
+      value:
+        scalar[0]: 12
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Damage_On
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Point_Damage_Tile_X
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Point_Damage_Tile_Y
+      value:
+        scalar[0]: 9
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Point_Damage_Power
+      value:
+        scalar[0]: 2.04
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Cracks_Nb_X
+      value:
+        scalar[0]: 6
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Cracks_Nb_Y
+      value:
+        scalar[0]: 6
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Cracks_Width
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: amount_of_broken_parts
+      value:
+        scalar[0]: 0.5
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Broken_Tiles_Number_X
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Broken_Tiles_Number_Y
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Input_Pattern
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Tiles_Color
+      value:
+        scalar[0]: 0.603
+        scalar[1]: 0.35685906
+        scalar[2]: 0.038456578
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Input_Image_On_Off
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    materialInformation:
+      serializedVersion: 5
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      generateMipmaps: 1
+      generateAllOutputs: 0
+      animationUpdateRate: 0
+    materialProperties:
+      serializedVersion: 2
+      texEnvs:
+      - first:
+          name: _BumpMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _DetailAlbedoMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _DetailMask
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _DetailNormalMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _EmissionMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _MainTex
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _MetallicGlossMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _OcclusionMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _ParallaxMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      floats:
+      - first:
+          name: _BumpScale
+        second: 1
+      - first:
+          name: _Cutoff
+        second: 0.5
+      - first:
+          name: _DetailNormalMapScale
+        second: 1
+      - first:
+          name: _DstBlend
+        second: 0
+      - first:
+          name: _GlossMapScale
+        second: 1
+      - first:
+          name: _Glossiness
+        second: 0.5
+      - first:
+          name: _GlossyReflections
+        second: 1
+      - first:
+          name: _Metallic
+        second: 0
+      - first:
+          name: _Mode
+        second: 0
+      - first:
+          name: _OcclusionStrength
+        second: 1
+      - first:
+          name: _Parallax
+        second: 0.02
+      - first:
+          name: _SmoothnessTextureChannel
+        second: 0
+      - first:
+          name: _SpecularHighlights
+        second: 1
+      - first:
+          name: _SrcBlend
+        second: 1
+      - first:
+          name: _UVSec
+        second: 0
+      - first:
+          name: _ZWrite
+        second: 1
+      colors:
+      - first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      - first:
+          name: _EmissionColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+    textureParameters:
+    - name: Floor_Tiles_2_basecolor
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Floor_Tiles_2_normal
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Floor_Tiles_2_metallic
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Floor_Tiles_2_height
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Floor_Tiles_2_Ambient_Occlusion
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    textureAssignments:
+    - shaderProp:
+        name: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 973816875
+    - shaderProp:
+        name: _MainTex
+      material: {instanceID: 0}
+      baseUID: 973816873
+    - shaderProp:
+        name: _MetallicGlossMap
+      material: {instanceID: 0}
+      baseUID: 973816879
+    - shaderProp:
+        name: _OcclusionMap
+      material: {instanceID: 0}
+      baseUID: 1052931155
+    - shaderProp:
+        name: _ParallaxMap
+      material: {instanceID: 0}
+      baseUID: 1046769374
+    buildTargetSettings:
+    - serializedVersion: 2
+      buildTarget: 
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 1
+      loadingBehavior: 1
+  - serializedVersion: 16
+    name: Floor_Tiles_3
+    prototypeName: Floor_Tiles
+    shaderName: 
+    shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+    shaderKeywords: 
+    renderQueue: -1
+    lightmapFlags: 5
+    inputs:
+    - name: $outputsize
+      value:
+        scalar[0]: 8
+        scalar[1]: 8
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: $randomseed
+      value:
+        scalar[0]: 5393
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Tile_X
+      value:
+        scalar[0]: 24
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Tile_Y
+      value:
+        scalar[0]: 12
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Damage_On
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Point_Damage_Tile_X
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Point_Damage_Tile_Y
+      value:
+        scalar[0]: 9
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Point_Damage_Power
+      value:
+        scalar[0]: 2.04
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Cracks_Nb_X
+      value:
+        scalar[0]: 6
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Cracks_Nb_Y
+      value:
+        scalar[0]: 6
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Cracks_Width
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: amount_of_broken_parts
+      value:
+        scalar[0]: 0.5
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Broken_Tiles_Number_X
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Broken_Tiles_Number_Y
+      value:
+        scalar[0]: 10
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    - name: Input_Pattern
+      value:
+        scalar[0]: 0
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {fileID: 2800000, guid: bf579b32ccddc9b4b8805f53e7755c71, type: 3}
+    - name: Tiles_Color
+      value:
+        scalar[0]: 0.576471
+        scalar[1]: 0.643137
+        scalar[2]: 0.623529
+        scalar[3]: 1
+        texture: {instanceID: 0}
+    - name: Input_Image_On_Off
+      value:
+        scalar[0]: 1
+        scalar[1]: 0
+        scalar[2]: 0
+        scalar[3]: 0
+        texture: {instanceID: 0}
+    materialInformation:
+      serializedVersion: 5
+      offset: {x: 0, y: 0}
+      scale: {x: 1, y: 1}
+      generateMipmaps: 1
+      generateAllOutputs: 0
+      animationUpdateRate: 0
+    materialProperties:
+      serializedVersion: 2
+      texEnvs:
+      - first:
+          name: _BumpMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _DetailAlbedoMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _DetailMask
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _DetailNormalMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _EmissionMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _MainTex
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _MetallicGlossMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _OcclusionMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      - first:
+          name: _ParallaxMap
+        second:
+          texture: {instanceID: 0}
+          scale: {x: 1, y: 1}
+          offset: {x: 0, y: 0}
+      floats:
+      - first:
+          name: _BumpScale
+        second: 1
+      - first:
+          name: _Cutoff
+        second: 0.5
+      - first:
+          name: _DetailNormalMapScale
+        second: 1
+      - first:
+          name: _DstBlend
+        second: 0
+      - first:
+          name: _GlossMapScale
+        second: 1
+      - first:
+          name: _Glossiness
+        second: 0.5
+      - first:
+          name: _GlossyReflections
+        second: 1
+      - first:
+          name: _Metallic
+        second: 0
+      - first:
+          name: _Mode
+        second: 0
+      - first:
+          name: _OcclusionStrength
+        second: 1
+      - first:
+          name: _Parallax
+        second: 0.02
+      - first:
+          name: _SmoothnessTextureChannel
+        second: 0
+      - first:
+          name: _SpecularHighlights
+        second: 1
+      - first:
+          name: _SrcBlend
+        second: 1
+      - first:
+          name: _UVSec
+        second: 0
+      - first:
+          name: _ZWrite
+        second: 1
+      colors:
+      - first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      - first:
+          name: _EmissionColor
+        second: {r: 0, g: 0, b: 0, a: 1}
+    textureParameters:
+    - name: Floor_Tiles_3_basecolor
+      alphaSource: 6
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Floor_Tiles_3_normal
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Floor_Tiles_3_metallic
+      alphaSource: 7
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Floor_Tiles_3_height
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    - name: Floor_Tiles_3_Ambient_Occlusion
+      alphaSource: 0
+      filterMode: 1
+      aniso: 1
+      wrapMode: 0
+    textureAssignments:
+    - shaderProp:
+        name: _BumpMap
+      material: {instanceID: 0}
+      baseUID: 973816875
+    - shaderProp:
+        name: _MainTex
+      material: {instanceID: 0}
+      baseUID: 973816873
+    - shaderProp:
+        name: _MetallicGlossMap
+      material: {instanceID: 0}
+      baseUID: 973816879
+    - shaderProp:
+        name: _OcclusionMap
+      material: {instanceID: 0}
+      baseUID: 1052931155
+    - shaderProp:
+        name: _ParallaxMap
+      material: {instanceID: 0}
+      baseUID: 1046769374
+    buildTargetSettings:
+    - serializedVersion: 2
+      buildTarget: 
+      textureWidth: 2048
+      textureHeight: 2048
+      textureFormat: 0
+      loadingBehavior: 1
+  deletedPrototypes: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

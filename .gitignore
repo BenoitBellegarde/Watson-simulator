@@ -34,3 +34,5 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+/Assets/Resources/Realistic/Domestic Animals/Cats/Cat_male_Short/textures/Cat_Color_orang.tif
+/Assets/Resources/Realistic/Domestic Animals/Cats/Cat_male_Short/textures/Cat_Color_orang.tif.meta
