@@ -19,6 +19,9 @@ public class CatMovement : MonoBehaviour
     private CharacterController controller;
     private ParticleSystem fartParticle;
     private float sittingTime = 0f;
+    private int sittingCycle= 0;
+
+    private bool isGoingBackward = false;
 
     private void Awake()
     {
@@ -30,14 +33,24 @@ public class CatMovement : MonoBehaviour
 
     void Update()
     {
-        
         if (animator.GetBool("Sit") == true)
         {
             sittingTime += Time.deltaTime;
             animator.SetFloat("SittingTime", sittingTime);
+
+            // Make Random animations after sit (use later)
+          /*  if (sittingTime % 2 != 0)
+            {
+
+            }
+            else
+            {
+
+            }*/
             if(sittingTime > 8)
             {
                 sittingTime = 0;
+                sittingCycle++;
             }
         }
 
@@ -66,12 +79,20 @@ public class CatMovement : MonoBehaviour
             
         }
 
-            //Movement + jump control/animation
-            if (controller.isGrounded)
+        //Movement + jump control/animation
+        if (controller.isGrounded)
         {
             animator.SetBool("isGrounded", true);
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
-            
+
+            if (moveDirection.z < 0)
+            {
+                isGoingBackward = true;
+            }
+            else
+            {
+                isGoingBackward = false;
+            }
             moveDirection = cameraTransform.TransformDirection(moveDirection);
             moveDirection *= speed;
 
@@ -91,7 +112,18 @@ public class CatMovement : MonoBehaviour
   
         Vector3 horizontalVelocity = controller.velocity;
         horizontalVelocity = new Vector3(controller.velocity.x, 0, controller.velocity.z);
-        animator.SetFloat("Speed", horizontalVelocity.magnitude);
+        float magnitudeMovement = horizontalVelocity.magnitude;
+        if (isGoingBackward)
+        {
+            if (magnitudeMovement > 0.5f)
+            {
+                moveDirection = moveDirection.normalized * 0.5f;
+            }
+            magnitudeMovement = -horizontalVelocity.magnitude;
+            
+        }
+        Debug.Log(magnitudeMovement);
+        animator.SetFloat("Speed", magnitudeMovement);
         controller.Move(moveDirection * Time.deltaTime);
         
         if (horizontalVelocity.magnitude > 0)
