@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -19,16 +20,21 @@ public class CatMovement : MonoBehaviour
     private CharacterController controller;
     private ParticleSystem fartParticle;
     private float sittingTime = 0f;
-    private int sittingCycle= 0;
 
     private bool isGoingBackward = false;
 
+    private String[] randomAnimations = { "Wash", "Lie" };
+
+    private String sitActiveAnimation = "";
+        
     private void Awake()
     {
         controller = GetComponent<CharacterController>();
         fartParticle = GetComponentInChildren<ParticleSystem>();
         animator = GetComponentInChildren<Animator>();
         audioSource = GetComponent<AudioSource>();
+
+        SelectRandomSitAnimation();
     }
 
     void Update()
@@ -38,19 +44,10 @@ public class CatMovement : MonoBehaviour
             sittingTime += Time.deltaTime;
             animator.SetFloat("SittingTime", sittingTime);
 
-            // Make Random animations after sit (use later)
-          /*  if (sittingTime % 2 != 0)
-            {
-
-            }
-            else
-            {
-
-            }*/
             if(sittingTime > 8)
             {
                 sittingTime = 0;
-                sittingCycle++;
+                SelectRandomSitAnimation();
             }
         }
 
@@ -138,6 +135,19 @@ public class CatMovement : MonoBehaviour
             newRotation.z = transform.rotation.z;
             transform.rotation = Quaternion.Slerp(transform.rotation, newRotation, Time.deltaTime * 5f);
         }
+    }
+
+    private void SelectRandomSitAnimation()
+    {
+        if(sitActiveAnimation != "")
+        {
+            animator.SetBool(sitActiveAnimation, false);
+        }
+
+        System.Random rnd = new System.Random();
+        int rndNumber = rnd.Next(0, 2);
+        sitActiveAnimation = randomAnimations[rndNumber];
+        animator.SetBool(sitActiveAnimation, true);
     }
 
 }
