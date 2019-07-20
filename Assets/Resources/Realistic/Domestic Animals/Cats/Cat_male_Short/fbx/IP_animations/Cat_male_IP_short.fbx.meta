@@ -767,15 +767,15 @@ ModelImporter:
     - serializedVersion: 16
       name: Arm_Cat|Lie
       takeName: Arm_Cat|Lie
-      firstFrame: 0
-      lastFrame: 150
+      firstFrame: 24
+      lastFrame: 124
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
-      cycleOffset: 0
+      cycleOffset: 23
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -935,15 +935,15 @@ ModelImporter:
     - serializedVersion: 16
       name: Arm_Cat|Sleep
       takeName: Arm_Cat|Sleep
-      firstFrame: 0
-      lastFrame: 100
+      firstFrame: 20
+      lastFrame: 80
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

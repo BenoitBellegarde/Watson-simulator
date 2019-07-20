@@ -13,6 +13,7 @@ public class CatMovement : MonoBehaviour
 
     // Drag & Drop the camera in this field, in the inspector
     public Transform cameraTransform;
+    public string defaultPosition;
 
     private AudioSource audioSource;
     private Vector3 moveDirection = Vector3.zero;
@@ -34,7 +35,8 @@ public class CatMovement : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         audioSource = GetComponent<AudioSource>();
 
-        SelectRandomSitAnimation();
+        ManageDefaultPosition();
+        
     }
 
     void Update()
@@ -49,12 +51,6 @@ public class CatMovement : MonoBehaviour
                 sittingTime = 0;
                 SelectRandomSitAnimation();
             }
-        }
-
-        // Block movement inputs if on main menu
-        if (MainMenu.onMainMenu)
-        {
-            return;
         }
 
 
@@ -119,7 +115,6 @@ public class CatMovement : MonoBehaviour
             magnitudeMovement = -horizontalVelocity.magnitude;
             
         }
-        Debug.Log(magnitudeMovement);
         animator.SetFloat("Speed", magnitudeMovement);
         controller.Move(moveDirection * Time.deltaTime);
         
@@ -148,6 +143,25 @@ public class CatMovement : MonoBehaviour
         int rndNumber = rnd.Next(0, 2);
         sitActiveAnimation = randomAnimations[rndNumber];
         animator.SetBool(sitActiveAnimation, true);
+    }
+
+    private void ManageDefaultPosition()
+    {
+        if (defaultPosition == "Sit")
+        {
+            animator.SetBool("Sit", true);
+            SelectRandomSitAnimation();
+        }
+        else if (defaultPosition == "Lie")
+        {
+            animator.SetBool("Lie", true);
+        }
+        else if (defaultPosition == "Sleep")
+        {
+            animator.SetBool("Lie", true);
+            animator.SetFloat("LyingTime", 11f);
+            Debug.Log(animator.GetFloat("LyingTime"));
+        }
     }
 
 }
