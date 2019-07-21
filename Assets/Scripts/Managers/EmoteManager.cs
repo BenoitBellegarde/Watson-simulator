@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class EmoteManager : MonoBehaviour
 {
-    public TextMeshProUGUI emote;
+    public GameObject emote;
     public Camera cameraTarget;
 
 
@@ -14,6 +14,5 @@ public class EmoteManager : MonoBehaviour
     {
         Vector3 namePose = cameraTarget.WorldToScreenPoint(this.transform.position);
         emote.transform.position = namePose;
-        Debug.Log(emote.transform.position);
     }
 }
