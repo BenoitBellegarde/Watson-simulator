@@ -161,7 +161,6 @@ public class CatMovement : MonoBehaviour
         {
             animator.SetBool("Lie", true);
             animator.SetFloat("LyingTime", 11f);
-            Debug.Log(animator.GetFloat("LyingTime"));
         }
     }
 

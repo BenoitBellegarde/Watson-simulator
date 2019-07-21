@@ -9,16 +9,19 @@ public class CinematicManager : MonoBehaviour
     public GameObject hudElements;
     public GameObject pauseMenu;
     public GameObject blackBars;
+    public GameObject watsonCoins;
 
     private Camera camera1;
     private Camera camera2;
     private Animator animator;
+
     // Start is called before the first frame update
     void Start()
     {
         camera1 = GameObject.FindWithTag("Camera1").GetComponent<Camera>();
         camera2 = GameObject.FindWithTag("Camera2").GetComponent<Camera>();
         animator = player.GetComponentInChildren<Animator>();
+        watsonCoins.SetActive(false);
        // camera2.gameObject.SetActive(false);
     }
 
@@ -58,5 +61,6 @@ public class CinematicManager : MonoBehaviour
         camera2.gameObject.SetActive(false);
         pauseMenu.SetActive(true);
         hudElements.SetActive(true);
+        watsonCoins.SetActive(true);
     }
 }
