@@ -5,13 +5,20 @@ using UnityEngine;
 public class CinematicManager : MonoBehaviour
 {
     public AudioSource audioSource;
+    public GameObject player;
+    public GameObject hudElements;
+    public GameObject pauseMenu;
+    public GameObject blackBars;
+
     private Camera camera1;
     private Camera camera2;
+    private Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         camera1 = GameObject.FindWithTag("Camera1").GetComponent<Camera>();
         camera2 = GameObject.FindWithTag("Camera2").GetComponent<Camera>();
+        animator = player.GetComponentInChildren<Animator>();
        // camera2.gameObject.SetActive(false);
     }
 
@@ -32,5 +39,24 @@ public class CinematicManager : MonoBehaviour
         AudioClip clip = Resources.Load<AudioClip>("Audio/snoring");
         audioSource.PlayOneShot(clip);
 
+    }
+
+    public void WakeUpWatson()
+    {
+        animator.SetFloat("LyingTime", 0f);
+    }
+
+    public void SitWatson()
+    {
+        animator.SetBool("Lie", false);
+        animator.SetBool("Sit", true);
+    }
+
+    public void CinematicToGameplay()
+    {
+        blackBars.SetActive(false);
+        camera2.gameObject.SetActive(false);
+        pauseMenu.SetActive(true);
+        hudElements.SetActive(true);
     }
 }

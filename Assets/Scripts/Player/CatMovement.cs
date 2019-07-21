@@ -134,14 +134,15 @@ public class CatMovement : MonoBehaviour
 
     private void SelectRandomSitAnimation()
     {
-        if(sitActiveAnimation != "")
-        {
-            animator.SetBool(sitActiveAnimation, false);
-        }
+        /*  if(sitActiveAnimation != "")
+          {
+              animator.SetBool(sitActiveAnimation, false);
+          }
 
-        System.Random rnd = new System.Random();
-        int rndNumber = rnd.Next(0, 2);
-        sitActiveAnimation = randomAnimations[rndNumber];
+          System.Random rnd = new System.Random();
+          int rndNumber = rnd.Next(0, 2);
+          sitActiveAnimation = randomAnimations[rndNumber];*/
+        sitActiveAnimation = "Wash";
         animator.SetBool(sitActiveAnimation, true);
     }
 
