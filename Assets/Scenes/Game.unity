@@ -24490,6 +24490,11 @@ PrefabInstance:
       propertyPath: cameraTransform
       value: 
       objectReference: {fileID: 534669905}
+    - target: {fileID: 2787403665863657900, guid: 7cb51ac13d7976b408a2daaea5603b26,
+        type: 3}
+      propertyPath: jumpSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 2787403665863657902, guid: 7cb51ac13d7976b408a2daaea5603b26,
         type: 3}
       propertyPath: countText
@@ -24543,7 +24548,7 @@ PrefabInstance:
     - target: {fileID: 2787403666468836657, guid: 7cb51ac13d7976b408a2daaea5603b26,
         type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cb51ac13d7976b408a2daaea5603b26, type: 3}

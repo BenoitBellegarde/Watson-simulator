@@ -22,7 +22,9 @@ public class CinematicManager : MonoBehaviour
         camera2 = GameObject.FindWithTag("Camera2").GetComponent<Camera>();
         animator = player.GetComponentInChildren<Animator>();
         watsonCoins.SetActive(false);
-       // camera2.gameObject.SetActive(false);
+
+        // Skip cutscenes (for dev purposes)
+        SkipCutscenes();
     }
 
     // Update is called once per frame
@@ -62,5 +64,13 @@ public class CinematicManager : MonoBehaviour
         pauseMenu.SetActive(true);
         hudElements.SetActive(true);
         watsonCoins.SetActive(true);
+    }
+
+    public void SkipCutscenes()
+    {
+        camera2.gameObject.SetActive(false);
+        camera1.gameObject.SetActive(false);
+        animator.SetBool("Lie", false);
+        CinematicToGameplay();
     }
 }

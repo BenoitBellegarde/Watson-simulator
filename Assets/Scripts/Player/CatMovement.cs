@@ -87,12 +87,27 @@ public class CatMovement : MonoBehaviour
                 isGoingBackward = false;
             }
             moveDirection = cameraTransform.TransformDirection(moveDirection);
-            moveDirection *= speed;
 
+            var altSpeed = speed;
+
+            //Backward speed divided by 2 
+            if (isGoingBackward)
+            {
+                altSpeed = speed/2;
+            }
+            moveDirection *= altSpeed;
+
+            //Jump handler
             if (Input.GetButtonDown("Jump"))
             {
                 animator.SetTrigger("Jump");
                 moveDirection.y = jumpSpeed;
+            }
+
+            //Add gravity to make it grounded
+            else
+            {
+                moveDirection.y = -gravity * Time.deltaTime;
             }
                 
         }
@@ -103,19 +118,15 @@ public class CatMovement : MonoBehaviour
 
         moveDirection.y -= gravity * Time.deltaTime;
   
-        Vector3 horizontalVelocity = controller.velocity;
-        horizontalVelocity = new Vector3(controller.velocity.x, 0, controller.velocity.z);
+        Vector3 horizontalVelocity = new Vector3(controller.velocity.x, 0, controller.velocity.z);
         float magnitudeMovement = horizontalVelocity.magnitude;
         if (isGoingBackward)
         {
-            if (magnitudeMovement > 0.5f)
-            {
-                moveDirection = moveDirection.normalized * 0.5f;
-            }
             magnitudeMovement = -horizontalVelocity.magnitude;
             
         }
         animator.SetFloat("Speed", magnitudeMovement);
+
         controller.Move(moveDirection * Time.deltaTime);
         
         if (horizontalVelocity.magnitude > 0)
