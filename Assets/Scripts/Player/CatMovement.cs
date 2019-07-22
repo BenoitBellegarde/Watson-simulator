@@ -95,6 +95,11 @@ public class CatMovement : MonoBehaviour
             {
                 altSpeed = speed/2;
             }
+            else if (Input.GetButton("Run"))
+            {
+                
+                altSpeed = speed * 1.5f;
+            }
             moveDirection *= altSpeed;
 
             //Jump handler
