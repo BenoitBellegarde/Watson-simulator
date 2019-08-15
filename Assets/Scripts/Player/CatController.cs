@@ -14,6 +14,7 @@ public class CatController : MonoBehaviour
     private Animator animator;
     private AudioSource audioSource;
     private bool gameEnded = false;
+    private CharacterController controller;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +25,7 @@ public class CatController : MonoBehaviour
         Obj1Complete.enabled = false;
         Obj2Complete.enabled = false;
         audioSource = GetComponent<AudioSource>();
+        controller = GetComponent<CharacterController>();
     }
 
     // Update is called once per frame
@@ -72,11 +74,22 @@ public class CatController : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
+            
         //If cat is sit on table => Obj2 completed
         if (Obj2Complete.enabled == false && hit.gameObject.CompareTag("Table") && animator.GetBool("Sit") == true)
         {
             Obj2Complete.enabled = true;
         }
+
+        Rigidbody body = hit.collider.attachedRigidbody;
+        if (body != null && !body.isKinematic)
+        {
+            Vector3 newVelocity = new Vector3(hit.controller.velocity.x, 0, hit.controller.velocity.z);
+            body.velocity += newVelocity;
+            Debug.Log(body.velocity);
+        }
+            
+
     }
 
 

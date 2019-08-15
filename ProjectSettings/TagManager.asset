@@ -9,6 +9,7 @@ TagManager:
   - PostProcessing
   - Camera1
   - Camera2
+  - Floor
   layers:
   - Default
   - TransparentFX

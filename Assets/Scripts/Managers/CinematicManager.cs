@@ -10,10 +10,12 @@ public class CinematicManager : MonoBehaviour
     public GameObject pauseMenu;
     public GameObject blackBars;
     public GameObject watsonCoins;
+    public GameObject notification;
 
     private Camera camera1;
     private Camera camera2;
     private Animator animator;
+    private Animator notificationAnimator;
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,8 @@ public class CinematicManager : MonoBehaviour
         camera1 = GameObject.FindWithTag("Camera1").GetComponent<Camera>();
         camera2 = GameObject.FindWithTag("Camera2").GetComponent<Camera>();
         animator = player.GetComponentInChildren<Animator>();
+        notificationAnimator = notification.GetComponent<Animator>();
+
         watsonCoins.SetActive(false);
 
         // Skip cutscenes (for dev purposes)
@@ -39,9 +43,9 @@ public class CinematicManager : MonoBehaviour
         camera1.gameObject.SetActive(false);      
     }
 
-    public void PlaySnoringSound()
+    public void PlaySound(string sound)
     {
-        AudioClip clip = Resources.Load<AudioClip>("Audio/snoring");
+        AudioClip clip = Resources.Load<AudioClip>("Audio/"+sound);
         audioSource.PlayOneShot(clip);
 
     }
@@ -53,8 +57,8 @@ public class CinematicManager : MonoBehaviour
 
     public void SitWatson()
     {
-        animator.SetBool("Lie", false);
         animator.SetBool("Sit", true);
+        animator.SetBool("Lie", false);
     }
 
     public void CinematicToGameplay()
@@ -64,6 +68,8 @@ public class CinematicManager : MonoBehaviour
         pauseMenu.SetActive(true);
         hudElements.SetActive(true);
         watsonCoins.SetActive(true);
+
+        notificationAnimator.SetBool("Show", true);
     }
 
     public void SkipCutscenes()
