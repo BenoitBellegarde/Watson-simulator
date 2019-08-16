@@ -22,8 +22,8 @@ public class CatController : MonoBehaviour
         count = 0;
         SetCountText();
         animator = GetComponentInChildren<Animator>();
-        Obj1Complete.enabled = false;
-        Obj2Complete.enabled = false;
+        //Obj1Complete.enabled = false;
+       // Obj2Complete.enabled = false;
         audioSource = GetComponent<AudioSource>();
         controller = GetComponent<CharacterController>();
     }
@@ -31,11 +31,11 @@ public class CatController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Obj1Complete.enabled == true && Obj2Complete.enabled == true && !gameEnded && !audioSource.isPlaying)
+       /* if(Obj1Complete.enabled == true && Obj2Complete.enabled == true && !gameEnded && !audioSource.isPlaying)
         {
             audioSource.PlayOneShot(winningSound,0.4f);
             gameEnded = true;
-        }
+        }*/
     }
 
     private void OnTriggerEnter(Collider other)
@@ -62,10 +62,10 @@ public class CatController : MonoBehaviour
             SetCountText();
 
             // If 10 coins collected => Set Obj1 completed
-            if(Obj1Complete.enabled == false && count == 10)
+           /* if(Obj1Complete.enabled == false && count == 10)
             {
                 Obj1Complete.enabled = true;
-            }
+            }*/
 
 
         }
@@ -76,10 +76,10 @@ public class CatController : MonoBehaviour
     {
             
         //If cat is sit on table => Obj2 completed
-        if (Obj2Complete.enabled == false && hit.gameObject.CompareTag("Table") && animator.GetBool("Sit") == true)
+     /*   if (Obj2Complete.enabled == false && hit.gameObject.CompareTag("Table") && animator.GetBool("Sit") == true)
         {
             Obj2Complete.enabled = true;
-        }
+        }*/
 
         Rigidbody body = hit.collider.attachedRigidbody;
         if (body != null && !body.isKinematic)
