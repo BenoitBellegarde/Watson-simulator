@@ -66,16 +66,21 @@ public class CinematicManager : MonoBehaviour
         camera1.transform.position = new Vector3(3.998f,3.719f,0.36f);
         camera1.transform.Rotate(new Vector3(0f, -60f, 20f),Space.World);
         camera1.gameObject.SetActive(true);
-
-        //Show notification
+        notification.SetText("Bienvenue dans le monde de Watson");
         notification.ShowNotification();
         yield return new WaitForSeconds(5);
-        camera1.transform.position = new Vector3(3.96f, 2.7f, -1.36f);
-        notification.SetText("Recupere les Watson Pieces pour personnaliser Watson");
 
+        //Objective angle
+        camera1.transform.position = new Vector3(2.85f, 3.25f, 3f);
+        camera1.transform.Rotate(new Vector3(0f, -32f, 10f), Space.Self);
+        notification.SetText("Prends un malin plaisir a faire un maximum de betises tant que tu es tout seul");
         yield return new WaitForSeconds(5);
 
-        //....
+        //Show notification
+        camera1.transform.position = new Vector3(3.96f, 2.7f, -1.36f);
+        camera1.transform.Rotate(new Vector3(0f, 32f, -10f), Space.Self);
+        notification.SetText("N'oublie pas de recuperer des Watson Pieces pour personnaliser Watson plus tard");
+        yield return new WaitForSeconds(5);
 
         SetCinematicState("off");
         notification.HideNotification();
@@ -84,6 +89,7 @@ public class CinematicManager : MonoBehaviour
         //Show new objective
         objective.SetText("Fais 5 betises");
         objective.ShowObjective();
+        objective.ShowObjectiveCount();
 
         yield return null;
     }
@@ -113,6 +119,8 @@ public class CinematicManager : MonoBehaviour
         watsonCoins.SetActive(true);
 
         objective.ShowObjective();
+       // notification.SetText("On dirait bien que tu es tout seul pour un moment...");
+       // notification.ShowNotification();
     }
 
     public void SkipCutscenes()

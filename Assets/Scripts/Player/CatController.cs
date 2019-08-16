@@ -86,7 +86,6 @@ public class CatController : MonoBehaviour
         {
             Vector3 newVelocity = new Vector3(hit.controller.velocity.x, 0, hit.controller.velocity.z);
             body.velocity += newVelocity;
-            Debug.Log(body.velocity);
         }
             
 

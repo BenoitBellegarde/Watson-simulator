@@ -5,6 +5,8 @@ using UnityEngine;
 public class Destructible : MonoBehaviour
 {
     public GameObject destroyedVersion;
+    public ObjectiveManager objectiveManager;
+    public bool countAsObjective = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,10 @@ public class Destructible : MonoBehaviour
         {
             Instantiate(destroyedVersion, transform.position, transform.rotation);
             Destroy(gameObject);
+            if (countAsObjective)
+            {
+                objectiveManager.IncrementObjectiveCount();
+            }
         }
 
     }
