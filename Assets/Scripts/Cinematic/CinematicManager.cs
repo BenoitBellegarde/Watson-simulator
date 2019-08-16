@@ -15,13 +15,12 @@ public class CinematicManager : MonoBehaviour
     public GameObject blackBars;
     public GameObject watsonCoins;
     public NotificationManager notification;
-    public GameObject objective;
+    public ObjectiveManager objective;
 
     private Camera camera1;
     private Camera camera2;
     private Animation camera1Animation;
     private Animator animator;
-    private Animator objectiveAnimator;
     private CharacterController characterController;
     private CatMovement playerMovement;
 
@@ -34,13 +33,12 @@ public class CinematicManager : MonoBehaviour
         camera1Animation = camera1.gameObject.GetComponent<Animation>();
         animator = player.GetComponentInChildren<Animator>();
         characterController = player.GetComponent<CharacterController>();
-        objectiveAnimator = objective.GetComponent<Animator>();
         playerMovement = player.GetComponent<CatMovement>();
 
         camera1Animation.Play();
 
         watsonCoins.SetActive(false);
-        playerMovement.enabled = false;
+        SetCinematicState("on");
 
         // Skip cutscenes (for dev purposes)
         SkipCutscenes();
@@ -60,28 +58,33 @@ public class CinematicManager : MonoBehaviour
 
     public IEnumerator Lvl1_Presentation()
     {
-        inCinematic = true;
-        blackBars.SetActive(true);
         animator.SetBool("Sit", true);
-        playerMovement.enabled = false;
+        objective.HideObjective();
+        SetCinematicState("on");
+
+        // Set cinematic camera pos/rot
         camera1.transform.position = new Vector3(3.998f,3.719f,0.36f);
         camera1.transform.Rotate(new Vector3(0f, -60f, 20f),Space.World);
         camera1.gameObject.SetActive(true);
 
+        //Show notification
         notification.ShowNotification();
         yield return new WaitForSeconds(5);
         camera1.transform.position = new Vector3(3.96f, 2.7f, -1.36f);
         notification.SetText("Recupere les Watson Pieces pour personnaliser Watson");
+
         yield return new WaitForSeconds(5);
 
         //....
 
-        inCinematic = false;
+        SetCinematicState("off");
         notification.HideNotification();
-        blackBars.SetActive(false);
-        playerMovement.enabled = true;
         camera1.gameObject.SetActive(false);
-        
+
+        //Show new objective
+        objective.SetText("Fais 5 betises");
+        objective.ShowObjective();
+
         yield return null;
     }
 
@@ -105,14 +108,11 @@ public class CinematicManager : MonoBehaviour
 
     public void CinematicToGameplay()
     {
-        playerMovement.enabled = true;
-        blackBars.SetActive(false);
+        SetCinematicState("off");
         camera2.gameObject.SetActive(false);
-        pauseMenu.SetActive(true);
-        hudElements.SetActive(true);
         watsonCoins.SetActive(true);
 
-        objectiveAnimator.SetBool("Show", true);
+        objective.ShowObjective();
     }
 
     public void SkipCutscenes()
@@ -121,5 +121,24 @@ public class CinematicManager : MonoBehaviour
         camera1.gameObject.SetActive(false);
         animator.SetBool("Lie", false);
         CinematicToGameplay();
+    }
+
+    public void SetCinematicState(string state)
+    {
+        if(state == "on")
+        {
+            inCinematic = true;
+            hudElements.SetActive(false);
+            blackBars.SetActive(true);
+            playerMovement.enabled = false;
+        }
+        else if(state == "off")
+        {
+            inCinematic = false;
+            blackBars.SetActive(false);
+            hudElements.SetActive(true);
+            playerMovement.enabled = true;
+            pauseMenu.SetActive(true);
+        }
     }
 }

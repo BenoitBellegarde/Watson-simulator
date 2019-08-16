@@ -7,12 +7,14 @@ public class NotificationManager : MonoBehaviour
 {
     protected Animator animator;
     protected TextMeshProUGUI text;
+    private RectTransform rectTransform;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
         text = GetComponentInChildren<TextMeshProUGUI>();
+        rectTransform = GetComponent<RectTransform>();
     }
 
     // Update is called once per frame
@@ -23,6 +25,7 @@ public class NotificationManager : MonoBehaviour
 
     public void HideNotification()
     {
+ 
         if (!CinematicManager.inCinematic && animator.GetBool("isShown"))
         {
             animator.SetBool("Show", false);
@@ -30,6 +33,7 @@ public class NotificationManager : MonoBehaviour
         }
         
     }
+
 
     public void ShowNotification()
     {
