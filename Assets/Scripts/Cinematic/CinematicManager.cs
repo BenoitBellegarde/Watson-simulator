@@ -16,6 +16,7 @@ public class CinematicManager : MonoBehaviour
     public GameObject watsonCoins;
     public NotificationManager notification;
     public ObjectiveManager objective;
+    public Camera mainCamera;
 
     private Camera camera1;
     private Camera camera2;
@@ -28,6 +29,7 @@ public class CinematicManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         camera1 = GameObject.FindWithTag("Camera1").GetComponent<Camera>();
         camera2 = GameObject.FindWithTag("Camera2").GetComponent<Camera>();
         camera1Animation = camera1.gameObject.GetComponent<Animation>();
@@ -41,7 +43,7 @@ public class CinematicManager : MonoBehaviour
         SetCinematicState("on");
 
         // Skip cutscenes (for dev purposes)
-        SkipCutscenes();
+       // SkipCutscenes();
     }
 
     // Update is called once per frame
@@ -52,8 +54,8 @@ public class CinematicManager : MonoBehaviour
 
     public void Lvl1_Intro_Camera1()
     {
-       // camera2.gameObject.SetActive(true);
-        camera1.gameObject.SetActive(false);      
+        camera2.enabled = true;
+        camera1.enabled = false;  
     }
 
     public IEnumerator Lvl1_Presentation()
@@ -65,13 +67,14 @@ public class CinematicManager : MonoBehaviour
         // Set cinematic camera pos/rot
         camera1.transform.position = new Vector3(3.998f,3.719f,0.36f);
         camera1.transform.Rotate(new Vector3(0f, -60f, 20f),Space.World);
-        camera1.gameObject.SetActive(true);
+        camera1.enabled = true;
+        mainCamera.enabled = false;
         notification.SetText("Bienvenue dans le monde de Watson");
         notification.ShowNotification();
         yield return new WaitForSeconds(5);
 
         //Objective angle
-        camera1.transform.position = new Vector3(2.85f, 3.25f, 3f);
+        camera1.transform.position = new Vector3(2.85f, 3.25f, 2.88f);
         camera1.transform.Rotate(new Vector3(0f, -32f, 10f), Space.Self);
         notification.SetText("Prends un malin plaisir a faire un maximum de betises tant que tu es tout seul");
         yield return new WaitForSeconds(5);
@@ -83,7 +86,8 @@ public class CinematicManager : MonoBehaviour
         yield return new WaitForSeconds(5);
 
         SetCinematicState("off");
-        camera1.gameObject.SetActive(false);
+        mainCamera.enabled = true;
+        camera1.enabled = false;
 
         //Show new objective
         objective.SetText("Fais 5 betises");
@@ -126,7 +130,8 @@ public class CinematicManager : MonoBehaviour
     public void CinematicToGameplay()
     {
         SetCinematicState("off");
-        camera2.gameObject.SetActive(false);
+        camera2.enabled = false;
+        mainCamera.enabled = true;
         watsonCoins.SetActive(true);
 
         objective.ShowObjective();
@@ -136,8 +141,8 @@ public class CinematicManager : MonoBehaviour
 
     public void SkipCutscenes()
     {
-        camera2.gameObject.SetActive(false);
-        camera1.gameObject.SetActive(false);
+        camera2.enabled = false;
+        camera1.enabled = false;
         animator.SetBool("Lie", false);
         CinematicToGameplay();
     }
