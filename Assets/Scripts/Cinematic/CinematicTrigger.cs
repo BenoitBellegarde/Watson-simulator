@@ -22,13 +22,19 @@ public class CinematicTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(!cinematicDone.ContainsKey(cinematicName) || cinematicDone[cinematicName] != true)
+        if(other.gameObject.CompareTag("Player") && (!cinematicDone.ContainsKey(cinematicName) || cinematicDone[cinematicName] != true))
         {
+
             switch (cinematicName)
             {
                 case "Lvl1_Presentation":
                     cinematicDone[cinematicName] = true;
                     StartCoroutine(cinematicManager.Lvl1_Presentation());
+                    break;
+
+                case "Lvl1_Obj1_Advice":
+                    cinematicDone[cinematicName] = true;
+                    StartCoroutine(cinematicManager.Lvl1_Obj1_Advice());
                     break;
             }
         }

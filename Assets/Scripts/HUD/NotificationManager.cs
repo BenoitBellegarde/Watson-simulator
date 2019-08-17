@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class NotificationManager : MonoBehaviour
 {
@@ -57,6 +58,31 @@ public class NotificationManager : MonoBehaviour
     public void SetText(string newText)
     {
         text.SetText(newText);
+    }
+
+    public string GetInputIcon(string input)
+    {
+        String[] controllers = Input.GetJoystickNames();
+        String nameIcon = "";
+        Debug.Log(controllers.Length);
+        switch (input)
+        {
+            case "Jump":
+                if(controllers.Length > 0)
+                {
+                    nameIcon = "<sprite=\"360_A\" index=0>";
+                    
+                }
+                else
+                {
+                    //nameIcon = "<sprite=\"Keyboard_Space\" index=0>";
+                    nameIcon = "Espace";
+
+                }
+                break;
+                
+        }
+        return nameIcon;
     }
 }
 

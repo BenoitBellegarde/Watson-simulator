@@ -83,16 +83,27 @@ public class CinematicManager : MonoBehaviour
         yield return new WaitForSeconds(5);
 
         SetCinematicState("off");
-        notification.HideNotification();
         camera1.gameObject.SetActive(false);
 
         //Show new objective
         objective.SetText("Fais 5 betises");
         objective.ShowObjective();
         objective.ShowObjectiveCount();
+        notification.SetText("Appuie sur " + notification.GetInputIcon("Jump") + " pour sauter");
+
+        yield return new WaitForSeconds(4);
+        notification.HideNotification();
 
         yield return null;
     }
+
+    public IEnumerator Lvl1_Obj1_Advice()
+    {
+        notification.SetText("Cette bouteille est prete a tomber par terre...");
+        notification.ShowNotification();
+        yield return null;
+    }
+
 
     public void PlaySound(string sound)
     {
@@ -149,4 +160,6 @@ public class CinematicManager : MonoBehaviour
             pauseMenu.SetActive(true);
         }
     }
+
+
 }
