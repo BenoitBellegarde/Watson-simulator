@@ -10,6 +10,8 @@ public class NotificationManager : MonoBehaviour
     protected TextMeshProUGUI text;
     private RectTransform rectTransform;
 
+    private Queue<NotificationManager> queueNotification = new Queue<NotificationManager>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,19 +31,41 @@ public class NotificationManager : MonoBehaviour
  
         if (!CinematicManager.inCinematic && animator.GetBool("isShown"))
         {
-            animator.SetBool("Show", false);
-            animator.SetBool("isShown", false);
+            if (queueNotification.Count > 0)
+            {
+                NotificationManager newNotification = queueNotification.Dequeue();
+                SetText(newNotification.GetTextComponent().text);
+                ShowNotification(true);
+            }
+            else
+            {
+                animator.SetBool("Show", false);
+                animator.SetBool("isShown", false);
+            }
+              
         }
         
     }
 
 
-    public void ShowNotification()
+
+    public void ShowNotification(bool fromDequeue = false)
     {
-        if (!animator.GetBool("isShown"))
+        if (fromDequeue)
+        {
+            Invoke("HideNotification", 4f);
+        }
+        else if (!animator.GetBool("isShown"))
         {
             animator.SetBool("Show", true);
             animator.SetBool("isShown", true);
+
+           
+            Invoke("HideNotification", 4f);
+        }
+        else
+        {
+            queueNotification.Enqueue(this);
         }
     }
 
@@ -55,8 +79,9 @@ public class NotificationManager : MonoBehaviour
         return text;
     }
 
-    public void SetText(string newText)
-    {
+    public void SetText(string newText, float textSize=32f)
+    {       
+        text.fontSize = textSize;
         text.SetText(newText);
     }
 
@@ -64,7 +89,6 @@ public class NotificationManager : MonoBehaviour
     {
         String[] controllers = Input.GetJoystickNames();
         String nameIcon = "";
-        Debug.Log(controllers.Length);
         switch (input)
         {
             case "Jump":
@@ -80,7 +104,35 @@ public class NotificationManager : MonoBehaviour
 
                 }
                 break;
-                
+
+            case "Sit":
+                if (controllers.Length > 0)
+                {
+                    nameIcon = "<sprite=\"360_B\" index=0>";
+
+                }
+                else
+                {
+                    //nameIcon = "<sprite=\"Keyboard_Space\" index=0>";
+                    nameIcon = "Clic droit";
+
+                }
+                break;
+
+            case "Fart":
+                if (controllers.Length > 0)
+                {
+                    nameIcon = "<sprite=\"360_Y\" index=0>";
+
+                }
+                else
+                {
+                    //nameIcon = "<sprite=\"Keyboard_Space\" index=0>";
+                    nameIcon = "Clic molette";
+
+                }
+                break;
+
         }
         return nameIcon;
     }

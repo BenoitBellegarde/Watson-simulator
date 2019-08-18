@@ -36,6 +36,16 @@ public class CinematicTrigger : MonoBehaviour
                     cinematicDone[cinematicName] = true;
                     StartCoroutine(cinematicManager.Lvl1_Obj1_Advice());
                     break;
+
+                case "Lvl1_Obj2_Advice":
+                    cinematicDone[cinematicName] = true;
+                    StartCoroutine(cinematicManager.Lvl1_Obj2_Advice());
+                    break;
+
+                case "Lvl1_Obj3_Advice":
+                    cinematicDone[cinematicName] = true;
+                    StartCoroutine(cinematicManager.Lvl1_Obj3_Advice());
+                    break;
             }
         }
     }

@@ -45,7 +45,7 @@ public class CinematicManager : MonoBehaviour
         SetCinematicState("on");
 
         // Skip cutscenes (for dev purposes)
-       // SkipCutscenes();
+        SkipCutscenes();
     }
 
     // Update is called once per frame
@@ -117,6 +117,19 @@ public class CinematicManager : MonoBehaviour
         notification.ShowNotification();
         yield return null;
     }
+    public IEnumerator Lvl1_Obj2_Advice()
+    {
+        notification.SetText("Ce clavier ferait un excellent coussin... \n Appuie sur "+notification.GetInputIcon("Sit")+" pour t'asseoir");
+        notification.ShowNotification();
+        yield return null;
+    }
+
+    public IEnumerator Lvl1_Obj3_Advice()
+    {
+        notification.SetText("La litiere est evidemment beaucoup trop loin...  \n Appuie sur " + notification.GetInputIcon("Sit") + " pour te mettre en position et " + notification.GetInputIcon("Fart") + " pour te soulager",28f);
+        notification.ShowNotification();
+        yield return null;
+    }
 
 
     public void PlaySound(string sound)
@@ -151,6 +164,8 @@ public class CinematicManager : MonoBehaviour
 
     public void SkipCutscenes()
     {
+        camera3.enabled = false;
+        camera3.gameObject.GetComponent<Animation>().Stop();
         camera2.enabled = false;
         camera1.enabled = false;
         animator.SetBool("Lie", false);
