@@ -20,6 +20,7 @@ public class CinematicManager : MonoBehaviour
 
     private Camera camera1;
     private Camera camera2;
+    private Camera camera3;
     private Animation camera1Animation;
     private Animator animator;
     private CharacterController characterController;
@@ -32,12 +33,13 @@ public class CinematicManager : MonoBehaviour
 
         camera1 = GameObject.FindWithTag("Camera1").GetComponent<Camera>();
         camera2 = GameObject.FindWithTag("Camera2").GetComponent<Camera>();
+        camera3 = GameObject.FindWithTag("Camera3").GetComponent<Camera>();
         camera1Animation = camera1.gameObject.GetComponent<Animation>();
         animator = player.GetComponentInChildren<Animator>();
         characterController = player.GetComponent<CharacterController>();
         playerMovement = player.GetComponent<CatMovement>();
 
-        camera1Animation.Play();
+        //camera1Animation.Play();
 
         watsonCoins.SetActive(false);
         SetCinematicState("on");
@@ -55,7 +57,15 @@ public class CinematicManager : MonoBehaviour
     public void Lvl1_Intro_Camera1()
     {
         camera2.enabled = true;
+        camera2.gameObject.GetComponent<Animation>().Play();
         camera1.enabled = false;  
+    }
+
+    public void Lvl1_Intro_Camera3()
+    {
+        camera1.enabled = true;
+        camera1.gameObject.GetComponent<Animation>().Play();
+        camera3.enabled = false;
     }
 
     public IEnumerator Lvl1_Presentation()
