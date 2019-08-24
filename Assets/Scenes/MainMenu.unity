@@ -11472,6 +11472,21 @@ PrefabInstance:
       propertyPath: defaultPosition
       value: Sit
       objectReference: {fileID: 0}
+    - target: {fileID: 419764061243747635, guid: 7cb51ac13d7976b408a2daaea5603b26,
+        type: 3}
+      propertyPath: cameraTransform
+      value: 
+      objectReference: {fileID: 534669905}
+    - target: {fileID: 419764061243747634, guid: 7cb51ac13d7976b408a2daaea5603b26,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 419764062385632473, guid: 7cb51ac13d7976b408a2daaea5603b26,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5653815281246507485, guid: 7cb51ac13d7976b408a2daaea5603b26,
         type: 3}
       propertyPath: m_Name

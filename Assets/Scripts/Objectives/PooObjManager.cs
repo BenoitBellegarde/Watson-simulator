@@ -25,10 +25,8 @@ public class PooObjManager : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Player") && objArrow != null)
-        {
-            Debug.Log(animatorPlayer.GetBool("Sit"));
-            
-            if (animatorPlayer.GetBool("Sit") == true && Input.GetButton("Fire3"))
+        {            
+            if (animatorPlayer.GetBool("Sit") == true && Input.GetButton("Fart"))
             {
                 Destroy(objArrow.gameObject);
                 objManager.IncrementObjectiveCount();

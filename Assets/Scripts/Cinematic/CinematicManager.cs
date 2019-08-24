@@ -131,6 +131,13 @@ public class CinematicManager : MonoBehaviour
         yield return null;
     }
 
+    public IEnumerator Lvl1_Obj4_Advice()
+    {
+        notification.SetText("Ce canape est beaucoup trop propre... \n Appuie sur " + notification.GetInputIcon("Attack") + " pour griffer");
+        notification.ShowNotification();
+        yield return null;
+    }
+
 
     public void PlaySound(string sound)
     {

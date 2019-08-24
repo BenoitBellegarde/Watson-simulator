@@ -55,14 +55,14 @@ public class CatMovement : MonoBehaviour
 
 
         //Sit animation
-        if (Input.GetButton("Fire2"))
+        if (Input.GetButton("Sit"))
         {   
             if (animator.GetBool("Sit") == false)
             {
                 animator.SetBool("Sit", true);
             }
         }
-        else if (Input.GetButton("Fire3"))
+        else if (Input.GetButton("Fart"))
         {
             if (!fartParticle.isPlaying)
             {
@@ -70,6 +70,11 @@ public class CatMovement : MonoBehaviour
                 audioSource.PlayOneShot(fartSound, 0.4f);
             }
             
+        }
+        else if (Input.GetButtonDown("Attack"))
+        {
+            animator.SetTrigger("Attack");
+
         }
 
         //Movement + jump control/animation

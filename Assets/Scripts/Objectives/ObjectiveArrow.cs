@@ -36,8 +36,4 @@ public class ObjectiveArrow : MonoBehaviour
         }
     }
 
-    private void DisableArrow()
-    {
-
-    }
 }

@@ -132,6 +132,19 @@ public class NotificationManager : MonoBehaviour
 
                 }
                 break;
+            case "Attack":
+                if (controllers.Length > 0)
+                {
+                    nameIcon = "<sprite=\"360_X\" index=0>";
+
+                }
+                else
+                {
+                    //nameIcon = "<sprite=\"Keyboard_Space\" index=0>";
+                    nameIcon = "Clic gauche";
+
+                }
+                break;
 
         }
         return nameIcon;

@@ -25,4 +25,5 @@ public class HUDManager : MonoBehaviour
     {
         animator.SetBool("Show", true);
     }
+
 }
