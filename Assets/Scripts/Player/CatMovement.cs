@@ -171,8 +171,10 @@ public class CatMovement : MonoBehaviour
     {
         if (defaultPosition == "Sit")
         {
+            animator.SetBool("Lie", false);
             animator.SetBool("Sit", true);
-            SelectRandomSitAnimation();
+            
+            //SelectRandomSitAnimation();
         }
         else if (defaultPosition == "Lie")
         {
