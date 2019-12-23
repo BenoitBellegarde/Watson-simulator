@@ -9,12 +9,11 @@ public class ScratchManager : MonoBehaviour
     public GameObject newTargetObject = null;
 
     private Animator animatorPlayer;
-    private ObjectiveArrow objArrow;
+    public ObjectiveArrow objArrow;
     // Start is called before the first frame update
     void Start()
     {
         animatorPlayer = GameObject.FindWithTag("Player").GetComponentInChildren<Animator>();
-        objArrow = GetComponentInChildren<ObjectiveArrow>();
     }
 
     // Update is called once per frame
