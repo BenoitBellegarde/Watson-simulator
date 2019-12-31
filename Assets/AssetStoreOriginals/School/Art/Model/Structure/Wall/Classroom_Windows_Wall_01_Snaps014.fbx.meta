@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: 4a24933193f645c4c93fb24f04152dae
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Classroom_Windows_Wall_01
+    100004: window002
+    100006: window01
+    100008: window01_009
+    100010: window01_010
+    100012: window01_011
+    100014: window01_012
+    100016: window01_013
+    100018: window01_014
+    100020: window01_015
+    100022: window01_016
+    100024: window01_1
+    100026: window01_2
+    100028: window01_3
+    100030: window01_4
+    100032: window01_5
+    100034: window01_6
+    100036: window01_7
+    100038: window01_8
+    100040: Windows_01
+    100042: Windows_02
+    400000: //RootNode
+    400002: Classroom_Windows_Wall_01
+    400004: window002
+    400006: window01
+    400008: window01_009
+    400010: window01_010
+    400012: window01_011
+    400014: window01_012
+    400016: window01_013
+    400018: window01_014
+    400020: window01_015
+    400022: window01_016
+    400024: window01_1
+    400026: window01_2
+    400028: window01_3
+    400030: window01_4
+    400032: window01_5
+    400034: window01_6
+    400036: window01_7
+    400038: window01_8
+    400040: Windows_01
+    400042: Windows_02
+    2100000: defaultMat
+    2100002: window01_1
+    2100004: glass01_1
+    2100006: Glass
+    2100008: lambert1
+    2100010: lambert2
+    2100012: lambert3
+    2100014: Wall
+    2100016: Wall_exterior
+    2100018: Wall_Interior
+    2100020: Skirting_line
+    2300000: //RootNode
+    2300002: Classroom_Windows_Wall_01
+    2300004: window002
+    2300006: window01
+    2300008: window01_009
+    2300010: window01_010
+    2300012: window01_011
+    2300014: window01_012
+    2300016: window01_013
+    2300018: window01_014
+    2300020: window01_015
+    2300022: window01_016
+    2300024: window01_1
+    2300026: window01_2
+    2300028: window01_3
+    2300030: window01_4
+    2300032: window01_5
+    2300034: window01_6
+    2300036: window01_7
+    2300038: window01_8
+    2300040: Windows_01
+    2300042: Windows_02
+    3300000: //RootNode
+    3300002: Classroom_Windows_Wall_01
+    3300004: window002
+    3300006: window01
+    3300008: window01_009
+    3300010: window01_010
+    3300012: window01_011
+    3300014: window01_012
+    3300016: window01_013
+    3300018: window01_014
+    3300020: window01_015
+    3300022: window01_016
+    3300024: window01_1
+    3300026: window01_2
+    3300028: window01_3
+    3300030: window01_4
+    3300032: window01_5
+    3300034: window01_6
+    3300036: window01_7
+    3300038: window01_8
+    3300040: Windows_01
+    3300042: Windows_02
+    4300000: Classroom_Windows_Wall_01
+    4300002: window01
+    4300004: window01_1
+    4300006: window01_2
+    4300008: window01_3
+    4300010: window01_4
+    4300012: window01_5
+    4300014: window01_6
+    4300016: window01_7
+    4300018: window01_8
+    4300020: window002
+    4300022: window01_009
+    4300024: window01_010
+    4300026: window01_011
+    4300028: window01_012
+    4300030: window01_013
+    4300032: window01_014
+    4300034: window01_015
+    4300036: window01_016
+    4300038: Windows_01
+    4300040: Windows_02
+    4300042: Classroom_Windows_Wall_01_LOD00
+    7400000: Take 001
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Skirting_line
+    second: {fileID: 2100000, guid: a006d6f553c040e459c7f77a973ab52a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall_Interior
+    second: {fileID: 2100000, guid: 3a33e131331ca7a409530f44b3e53b75, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall_exterior
+    second: {fileID: 2100000, guid: b830b6e0db891d54da5a56abfe8c336a, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

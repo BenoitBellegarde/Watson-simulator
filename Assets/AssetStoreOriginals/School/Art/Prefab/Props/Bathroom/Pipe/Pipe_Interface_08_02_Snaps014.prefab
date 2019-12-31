@@ -1,0 +1,90 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!65 &875569771791132
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8961262084274923036}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.038923543, y: 0.03899523, z: 0.0754859}
+  m_Center: {x: 0.00005711429, y: 0.0000056140125, z: -0.00000030361116}
+--- !u!1001 &8961262084275019964
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100000, guid: 86315a1a82c75c243bab9951ed1531ab, type: 3}
+      propertyPath: m_Name
+      value: Pipe_Interface_08_02_Snaps014
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86315a1a82c75c243bab9951ed1531ab, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86315a1a82c75c243bab9951ed1531ab, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86315a1a82c75c243bab9951ed1531ab, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86315a1a82c75c243bab9951ed1531ab, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000021855694
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86315a1a82c75c243bab9951ed1531ab, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86315a1a82c75c243bab9951ed1531ab, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86315a1a82c75c243bab9951ed1531ab, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86315a1a82c75c243bab9951ed1531ab, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86315a1a82c75c243bab9951ed1531ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86315a1a82c75c243bab9951ed1531ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 86315a1a82c75c243bab9951ed1531ab, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 86315a1a82c75c243bab9951ed1531ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 48fa337439f346347ac8a9f6cc79ca9b, type: 2}
+    - target: {fileID: 2300002, guid: 86315a1a82c75c243bab9951ed1531ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 48fa337439f346347ac8a9f6cc79ca9b, type: 2}
+    - target: {fileID: 2300004, guid: 86315a1a82c75c243bab9951ed1531ab, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 48fa337439f346347ac8a9f6cc79ca9b, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 86315a1a82c75c243bab9951ed1531ab, type: 3}
+--- !u!1 &8961262084274923036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 86315a1a82c75c243bab9951ed1531ab,
+    type: 3}
+  m_PrefabInstance: {fileID: 8961262084275019964}
+  m_PrefabAsset: {fileID: 0}
