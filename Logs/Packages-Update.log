@@ -57,3 +57,13 @@ Update Mode: mergeDefaultDependencies
 
 The following packages were added:
   com.unity.render-pipelines.high-definition@4.1.0-preview
+
+=== Tue Dec 31 16:26:59 2019
+
+Packages were changed.
+Update Mode: mergeDefaultDependencies
+
+The following packages were added:
+  com.unity.render-pipelines.high-definition@4.8.0-preview
+The following packages were updated:
+  com.unity.ads from version 2.0.8 to 2.3.1
