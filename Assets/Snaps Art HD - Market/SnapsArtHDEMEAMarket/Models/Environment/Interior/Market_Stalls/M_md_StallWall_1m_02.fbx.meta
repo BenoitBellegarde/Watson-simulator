@@ -1,0 +1,234 @@
+fileFormatVersion: 2
+guid: 4493955a08121144294155166c2e1114
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: M_md_StallWall_1m_02
+    100002: //RootNode
+    100004: M_md_StallWall_4m_038
+    100006: M_md_StallWall_4m_039
+    100008: M_md_StallWall_4m_056
+    100010: M_md_StallWall_4m_057
+    100012: M_md_StallWall_4m_083
+    100014: M_md_StallWall_4m_085
+    100016: M_md_StallWall_4m_090
+    100018: M_md_StallWall_4m_091
+    100020: M_md_Stall1_1m_02 1
+    100022: M_md_StallWall_1m_02 1
+    100024: M_md_StallWall_1m_02_LOD0
+    100026: M_md_StallWall_1m_02_LOD1
+    100028: M_md_StallWall_1m_02_Coll_01
+    100030: M_md_StallWall_1m_02_Coll_02
+    100032: M_md_StallWall_1m_02_col_01
+    100034: M_md_StallWall_1m_02_col_02
+    400000: M_md_StallWall_1m_02
+    400002: //RootNode
+    400004: M_md_StallWall_4m_038
+    400006: M_md_StallWall_4m_039
+    400008: M_md_StallWall_4m_056
+    400010: M_md_StallWall_4m_057
+    400012: M_md_StallWall_4m_083
+    400014: M_md_StallWall_4m_085
+    400016: M_md_StallWall_4m_090
+    400018: M_md_StallWall_4m_091
+    400020: M_md_Stall1_1m_02 1
+    400022: M_md_StallWall_1m_02 1
+    400024: M_md_StallWall_1m_02_LOD0
+    400026: M_md_StallWall_1m_02_LOD1
+    400028: M_md_StallWall_1m_02_Coll_01
+    400030: M_md_StallWall_1m_02_Coll_02
+    400032: M_md_StallWall_1m_02_col_01
+    400034: M_md_StallWall_1m_02_col_02
+    2100000: mt_WoodClean_a
+    2100002: wood_03_a
+    2100004: lambert1
+    2100006: trimsheet_06_a
+    2100008: m_wood_03_a
+    2100010: m_trimsheet_06_a
+    2300000: M_md_StallWall_1m_02
+    2300002: M_md_StallWall_4m_038
+    2300004: M_md_StallWall_4m_039
+    2300006: M_md_StallWall_4m_056
+    2300008: M_md_StallWall_4m_057
+    2300010: M_md_StallWall_4m_083
+    2300012: M_md_StallWall_4m_085
+    2300014: M_md_StallWall_4m_090
+    2300016: M_md_StallWall_4m_091
+    2300018: //RootNode
+    2300020: M_md_Stall1_1m_02 1
+    2300022: M_md_StallWall_1m_02 1
+    2300024: M_md_StallWall_1m_02_LOD0
+    2300026: M_md_StallWall_1m_02_LOD1
+    2300028: M_md_StallWall_1m_02_Coll_01
+    2300030: M_md_StallWall_1m_02_Coll_02
+    2300032: M_md_StallWall_1m_02_col_01
+    2300034: M_md_StallWall_1m_02_col_02
+    3300000: M_md_StallWall_1m_02
+    3300002: M_md_StallWall_4m_038
+    3300004: M_md_StallWall_4m_039
+    3300006: M_md_StallWall_4m_056
+    3300008: M_md_StallWall_4m_057
+    3300010: M_md_StallWall_4m_083
+    3300012: M_md_StallWall_4m_085
+    3300014: M_md_StallWall_4m_090
+    3300016: M_md_StallWall_4m_091
+    3300018: //RootNode
+    3300020: M_md_Stall1_1m_02 1
+    3300022: M_md_StallWall_1m_02 1
+    3300024: M_md_StallWall_1m_02_LOD0
+    3300026: M_md_StallWall_1m_02_LOD1
+    3300028: M_md_StallWall_1m_02_Coll_01
+    3300030: M_md_StallWall_1m_02_Coll_02
+    3300032: M_md_StallWall_1m_02_col_01
+    3300034: M_md_StallWall_1m_02_col_02
+    4300000: M_md_StallWall_1m_02
+    4300002: M_md_StallWall_4m_038
+    4300004: M_md_StallWall_4m_039
+    4300006: M_md_StallWall_4m_056
+    4300008: M_md_StallWall_4m_057
+    4300010: M_md_StallWall_4m_083
+    4300012: M_md_StallWall_4m_091
+    4300014: M_md_StallWall_4m_090
+    4300016: M_md_StallWall_4m_085
+    4300018: M_md_StallWall_1m_011
+    4300020: M_md_Stall1_1m_02
+    4300022: M_md_StallWall_1m_02_LOD0
+    4300024: M_md_StallWall_1m_02_LOD1
+    4300026: M_md_StallWall_1m_02_Coll_02
+    4300028: M_md_StallWall_1m_02_Coll_01
+    4300030: M_md_StallWall_1m_02_col_01
+    4300032: M_md_StallWall_1m_02_col_02
+    20500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: colMat
+    second: {fileID: 2100000, guid: 3e25188dceff8044f82b1f93df03b707, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_metal_01_b
+    second: {fileID: 2100000, guid: 44accba4c09bf1b4c839c584a9183257, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_trimsheet_06_a
+    second: {fileID: 2100000, guid: 204100b673d3ceb4ab9e4d91c82970ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_trimsheet_07_a
+    second: {fileID: 2100000, guid: 1fc475982341e2e439e5ebd29b80b702, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wall_interior_01_a
+    second: {fileID: 2100000, guid: e750d7b2dc0af9f439d4355e15482b90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wall_interior_02_a
+    second: {fileID: 2100000, guid: 9b4d22c260be4cc4480939d074e347b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mt_WoodClean_a
+    second: {fileID: 2100000, guid: e750d7b2dc0af9f439d4355e15482b90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trimsheet_06_a
+    second: {fileID: 2100000, guid: 204100b673d3ceb4ab9e4d91c82970ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood_03_a
+    second: {fileID: 2100000, guid: 153cdd83412f57f48af0fe8c9b955cc2, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

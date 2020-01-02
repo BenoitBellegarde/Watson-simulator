@@ -1,0 +1,264 @@
+fileFormatVersion: 2
+guid: 455935e5452eda54880182dc09061532
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: M_md_Stall4_1m_02
+    100002: //RootNode
+    100004: polySurface76
+    100006: polySurface83
+    100008: polySurface84
+    100010: polySurface79
+    100012: polySurface80
+    100014: polySurface85
+    100016: polySurface86
+    100018: M_md_Stall4_1m_02 1
+    100020: M_md_Stall4_1m_02_LOD1
+    100022: M_md_Stall4_1m_02_LOD0
+    100024: M_md_Stall4_1m_02_Coll_01
+    100026: M_md_Stall4_1m_02_Coll_02
+    100028: M_md_Stall4_1m_02_col_01
+    100030: M_md_Stall4_1m_02_col_02
+    400000: M_md_Stall4_1m_02
+    400002: //RootNode
+    400004: polySurface76
+    400006: polySurface83
+    400008: polySurface84
+    400010: polySurface79
+    400012: polySurface80
+    400014: polySurface85
+    400016: polySurface86
+    400018: M_md_Stall4_1m_02 1
+    400020: M_md_Stall4_1m_02_LOD1
+    400022: M_md_Stall4_1m_02_LOD0
+    400024: M_md_Stall4_1m_02_Coll_01
+    400026: M_md_Stall4_1m_02_Coll_02
+    400028: M_md_Stall4_1m_02_col_01
+    400030: M_md_Stall4_1m_02_col_02
+    2100000: mt_TrimSheet_02
+    2100002: mt_Steel_01
+    2100004: mt_WoodClean_a
+    2100006: mt_Glass_01
+    2100008: metal_01_a
+    2100010: trimsheet_05_a
+    2100012: metal_01_b
+    2100014: wood_03_a
+    2100016: glass_01_a
+    2100018: m_trimsheet_05_a
+    2100020: m_metal_01_b
+    2100022: m_wood_03_a
+    2100024: m_glass_01_a
+    2300000: M_md_Stall4_1m_02
+    2300002: polySurface76
+    2300004: polySurface83
+    2300006: polySurface84
+    2300008: polySurface79
+    2300010: polySurface80
+    2300012: polySurface85
+    2300014: polySurface86
+    2300016: M_md_Stall4_1m_02 1
+    2300018: M_md_Stall4_1m_02_LOD1
+    2300020: M_md_Stall4_1m_02_LOD0
+    2300022: M_md_Stall4_1m_02_Coll_01
+    2300024: M_md_Stall4_1m_02_Coll_02
+    2300026: M_md_Stall4_1m_02_col_01
+    2300028: M_md_Stall4_1m_02_col_02
+    3300000: M_md_Stall4_1m_02
+    3300002: polySurface76
+    3300004: polySurface83
+    3300006: polySurface84
+    3300008: polySurface79
+    3300010: polySurface80
+    3300012: polySurface85
+    3300014: polySurface86
+    3300016: M_md_Stall4_1m_02 1
+    3300018: M_md_Stall4_1m_02_LOD1
+    3300020: M_md_Stall4_1m_02_LOD0
+    3300022: M_md_Stall4_1m_02_Coll_01
+    3300024: M_md_Stall4_1m_02_Coll_02
+    3300026: M_md_Stall4_1m_02_col_01
+    3300028: M_md_Stall4_1m_02_col_02
+    4300000: M_md_Stall4_1m_02
+    4300002: polySurface76
+    4300004: polySurface83
+    4300006: polySurface84
+    4300008: polySurface79
+    4300010: polySurface80
+    4300012: polySurface85
+    4300014: polySurface86
+    4300016: M_md_Stall4_1m_02_LOD1
+    4300018: M_md_Stall4_1m_02_LOD0
+    4300020: M_md_Stall4_1m_02_Coll_01
+    4300022: M_md_Stall4_1m_02_Coll_02
+    4300024: M_md_Stall4_1m_02_col_01
+    4300026: M_md_Stall4_1m_02_col_02
+    20500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: colMat
+    second: {fileID: 2100000, guid: 3e25188dceff8044f82b1f93df03b707, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_01_a
+    second: {fileID: 2100000, guid: c5b89837ca960ec44bd7abfe2ac105c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_glass_01_a
+    second: {fileID: 2100000, guid: 94447761ad05e4b4d83d4d597d14d67f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_metal_01_b
+    second: {fileID: 2100000, guid: 44accba4c09bf1b4c839c584a9183257, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_metal_01_blnd_a
+    second: {fileID: 2100000, guid: fe92b1501638cae45a985b8444a2ac23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_metal_03_a
+    second: {fileID: 2100000, guid: 0e54f53a0c373584f89d2e64b6e074ce, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_trimsheet_08_a
+    second: {fileID: 2100000, guid: 35085ffa69bfa10419d8a4bdf19c563b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wood_03_a
+    second: {fileID: 2100000, guid: fb7658795b203b748a4c0da014f46add, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wood_03_blnd_a
+    second: {fileID: 2100000, guid: cd8ae25954623884080633b10f742559, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wood_03_c
+    second: {fileID: 2100000, guid: 64227436700be1642b7f538fab198c56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_01_b
+    second: {fileID: 2100000, guid: 44accba4c09bf1b4c839c584a9183257, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mt_Glass_01
+    second: {fileID: 2100000, guid: c5b89837ca960ec44bd7abfe2ac105c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mt_Steel_01
+    second: {fileID: 2100000, guid: 44accba4c09bf1b4c839c584a9183257, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: mt_WoodClean_a
+    second: {fileID: 2100000, guid: fb7658795b203b748a4c0da014f46add, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trimsheet_05_a
+    second: {fileID: 2100000, guid: 35085ffa69bfa10419d8a4bdf19c563b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood_03_a
+    second: {fileID: 2100000, guid: fb7658795b203b748a4c0da014f46add, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

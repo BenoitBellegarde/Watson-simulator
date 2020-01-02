@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: e6f352a646eee9d429be8098f9cf13c1
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Stall_13_merged
+    100002: //RootNode
+    400000: Stall_13_merged
+    400002: //RootNode
+    2100000: p_Stall_13_m_metal_01_blnd_a
+    2100002: p_Stall_13_m_trimsheet_07_a
+    2100004: p_Stall_13_m_metal_01_blnd_b
+    2100006: p_Stall_13_m_trimsheet_06_a
+    2100008: p_Stall_13_m_glass_01_a
+    2100010: p_Stall_13_m_wood_03_blnd_a
+    2100012: p_Stall_13_m_trimsheet_08_a
+    2100014: p_Stall_13_m_plastic_04_a
+    2100016: p_Stall_13_m_plastic_01_a
+    2100018: p_Stall_13_m_wall_interior_01_a
+    2100020: p_Stall_13_m_wall_interior_02_a
+    2100022: p_Stall_13_m_metal_01_a
+    2100024: p_Stall_13_m_metal_01_blnd_a1
+    2100026: p_Stall_13_m_plastic_02_a
+    2300000: Stall_13_merged
+    3300000: Stall_13_merged
+    4300000: Stall_13_merged
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_glass_01_a
+    second: {fileID: 2100000, guid: 94447761ad05e4b4d83d4d597d14d67f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_metal_01_a
+    second: {fileID: 2100000, guid: 87feba88fd3e8f540811ad39a649579c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_metal_01_blnd_a
+    second: {fileID: 2100000, guid: fe92b1501638cae45a985b8444a2ac23, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_metal_01_blnd_b
+    second: {fileID: 2100000, guid: 61603abf6a8bf9c41b8b4ab420bbdcb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_plastic_01_a
+    second: {fileID: 2100000, guid: 28dc6d7a52db3b04cac13d46dacb3ab4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_plastic_02_a
+    second: {fileID: 2100000, guid: 7955459af9e6e7642b78b0d731d04828, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_plastic_04_a
+    second: {fileID: 2100000, guid: 304848ac0e863ca46a15884f21ae1960, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_trimsheet_06_a
+    second: {fileID: 2100000, guid: 204100b673d3ceb4ab9e4d91c82970ca, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_trimsheet_07_a
+    second: {fileID: 2100000, guid: 1fc475982341e2e439e5ebd29b80b702, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_trimsheet_08_a
+    second: {fileID: 2100000, guid: 35085ffa69bfa10419d8a4bdf19c563b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wall_interior_01_a
+    second: {fileID: 2100000, guid: e750d7b2dc0af9f439d4355e15482b90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wall_interior_02_a
+    second: {fileID: 2100000, guid: 9b4d22c260be4cc4480939d074e347b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wood_03_blnd_a
+    second: {fileID: 2100000, guid: cd8ae25954623884080633b10f742559, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
