@@ -1,0 +1,10 @@
+{
+    "name": "Aura2_Editor",
+    "references": [
+        "Aura2_Core"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}

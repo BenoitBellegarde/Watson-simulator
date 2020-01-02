@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: Apply Aura Fog
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16205\n1453;100;1342;912;1823.277;615.6447;1.6;True;False\nNode;AmplifyShaderEditor.SamplerNode;33;-771.1932,122.3055;Float;True;Property;_TextureSample0;Texture
+    Sample 0;0;0;Create;True;0;0;False;0;None;None;True;0;False;white;Auto;False;Object;-1;Auto;Texture3D;6;0;SAMPLER2D;;False;1;FLOAT3;0,0,0;False;2;FLOAT;0;False;3;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;5;FLOAT;1;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.TexturePropertyNode;34;-1170.591,157.7051;Float;True;Global;Aura_VolumetricLightingTexture;Aura_VolumetricLightingTexture;0;1;[HideInInspector];Fetch;False;0;0;True;0;None;;False;white;LockedToTexture3D;Texture3D;0;1;SAMPLER3D;0\nNode;AmplifyShaderEditor.FunctionInput;3;-504.2539,-33.46658;Float;False;Color;3;0;True;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionNode;36;-1151.914,31.81525;Float;False;Get
+    Aura Buffer Coordinates;-1;;3;c7be419210659aa4b95108a112fa0b06;0;0;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;13;-332.8088,-34.37249;Float;False;Aura2_ApplyFog(Color,
+    BufferCoordinates, fogValue)@;7;False;3;True;Color;FLOAT4;0,0,0,0;InOut;;Float;True;BufferCoordinates;FLOAT3;0,0,0;In;;Float;True;fogValue;FLOAT4;0,0,0,0;In;;Float;Apply
+    Aura Fog;True;False;0;4;0;FLOAT;0;False;1;FLOAT4;0,0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT4;0,0,0,0;False;2;FLOAT;0;FLOAT4;2\nNode;AmplifyShaderEditor.FunctionOutput;0;16.69183,-18.00218;Float;False;True;Fogged
+    Color;0;True;1;0;FLOAT4;0,0,0,0;False;1;FLOAT4;0\nWireConnection;33;0;34;0\nWireConnection;33;1;36;0\nWireConnection;13;1;3;0\nWireConnection;13;2;36;0\nWireConnection;13;3;33;0\nWireConnection;0;0;13;2\nASEEND*/\n//CHKSM=67A59B5080F968BCF24F7EB784AE37036EE439CF"
+  m_functionName: 
+  m_description: Applies the volumetric fog from Aura to the input color.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 1
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_additionalDirectives:
+    - {fileID: 0}
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems:
+    - LineType: 0
+      LineValue: 
+      GUIDToggle: 1
+      GUIDValue: d5852a3de7b440d4d81714478bb5f3b2
+  m_nodeCategory: 5
+  m_customNodeCategory: 
+  m_previewPosition: 1
