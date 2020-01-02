@@ -1,0 +1,379 @@
+fileFormatVersion: 2
+guid: fd8e3fa350be7b647bb329b56bd0986b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Roof_front
+    100004: Roof_front 1
+    100006: Roof_front 2
+    100008: Roof_front 3
+    100010: F4_md_Roof_01_1
+    100012: F4_md_Roof_01_10
+    100014: F4_md_Roof_01_11
+    100016: F4_md_Roof_01_12
+    100018: F4_md_Roof_01_13
+    100020: F4_md_Roof_01_14
+    100022: F4_md_Roof_01_2
+    100024: F4_md_Roof_01_3
+    100026: F4_md_Roof_01_4
+    100028: F4_md_Roof_01_5
+    100030: F4_md_Roof_01_6
+    100032: F4_md_Roof_01_7
+    100034: F4_md_Roof_01_8
+    100036: F4_md_Roof_01_9
+    100038: rebuilt
+    100040: rebuilt1
+    100042: rebuilt13
+    100044: rebuilt17
+    100046: rebuilt18
+    100048: rebuilt19
+    100050: rebuilt2
+    100052: rebuilt20
+    100054: rebuilt21
+    100056: rebuilt22
+    100058: rebuilt23
+    100060: rebuilt24
+    100062: rebuilt25
+    100064: rebuilt26
+    100066: rebuilt27
+    100068: rebuilt28
+    100070: rebuilt29
+    100072: rebuilt3
+    100074: rebuilt30
+    100076: rebuilt31
+    100078: rebuilt5
+    100080: rebuilt8
+    100082: rebuilt9
+    100084: F4_md_Roof_3m_01_LOD0
+    100086: F4_md_Roof_3m_01_LOD1
+    100088: F4_md_Roof_3m_01_coll_01
+    100090: F4_md_Roof_3m_01_coll_02
+    100092: F4_md_Roof_3m_01_col_01
+    100094: F4_md_Roof_3m_01_col_02
+    400000: //RootNode
+    400002: Roof_front
+    400004: Roof_front 1
+    400006: Roof_front 2
+    400008: Roof_front 3
+    400010: F4_md_Roof_01_1
+    400012: F4_md_Roof_01_10
+    400014: F4_md_Roof_01_11
+    400016: F4_md_Roof_01_12
+    400018: F4_md_Roof_01_13
+    400020: F4_md_Roof_01_14
+    400022: F4_md_Roof_01_2
+    400024: F4_md_Roof_01_3
+    400026: F4_md_Roof_01_4
+    400028: F4_md_Roof_01_5
+    400030: F4_md_Roof_01_6
+    400032: F4_md_Roof_01_7
+    400034: F4_md_Roof_01_8
+    400036: F4_md_Roof_01_9
+    400038: rebuilt
+    400040: rebuilt1
+    400042: rebuilt13
+    400044: rebuilt17
+    400046: rebuilt18
+    400048: rebuilt19
+    400050: rebuilt2
+    400052: rebuilt20
+    400054: rebuilt21
+    400056: rebuilt22
+    400058: rebuilt23
+    400060: rebuilt24
+    400062: rebuilt25
+    400064: rebuilt26
+    400066: rebuilt27
+    400068: rebuilt28
+    400070: rebuilt29
+    400072: rebuilt3
+    400074: rebuilt30
+    400076: rebuilt31
+    400078: rebuilt5
+    400080: rebuilt8
+    400082: rebuilt9
+    400084: F4_md_Roof_3m_01_LOD0
+    400086: F4_md_Roof_3m_01_LOD1
+    400088: F4_md_Roof_3m_01_coll_01
+    400090: F4_md_Roof_3m_01_coll_02
+    400092: F4_md_Roof_3m_01_col_01
+    400094: F4_md_Roof_3m_01_col_02
+    2100000: lambert1
+    2100002: lambert3
+    2100004: F4_roof_bake_mat
+    2100006: F_Defaultwall_mat
+    2300000: Roof_front
+    2300002: Roof_front 1
+    2300004: Roof_front 2
+    2300006: Roof_front 3
+    2300008: //RootNode
+    2300010: F4_md_Roof_01_1
+    2300012: F4_md_Roof_01_10
+    2300014: F4_md_Roof_01_11
+    2300016: F4_md_Roof_01_12
+    2300018: F4_md_Roof_01_13
+    2300020: F4_md_Roof_01_14
+    2300022: F4_md_Roof_01_2
+    2300024: F4_md_Roof_01_3
+    2300026: F4_md_Roof_01_4
+    2300028: F4_md_Roof_01_5
+    2300030: F4_md_Roof_01_6
+    2300032: F4_md_Roof_01_7
+    2300034: F4_md_Roof_01_8
+    2300036: F4_md_Roof_01_9
+    2300038: rebuilt
+    2300040: rebuilt1
+    2300042: rebuilt13
+    2300044: rebuilt17
+    2300046: rebuilt18
+    2300048: rebuilt19
+    2300050: rebuilt2
+    2300052: rebuilt20
+    2300054: rebuilt21
+    2300056: rebuilt22
+    2300058: rebuilt23
+    2300060: rebuilt24
+    2300062: rebuilt25
+    2300064: rebuilt26
+    2300066: rebuilt27
+    2300068: rebuilt28
+    2300070: rebuilt29
+    2300072: rebuilt3
+    2300074: rebuilt30
+    2300076: rebuilt31
+    2300078: rebuilt5
+    2300080: rebuilt8
+    2300082: rebuilt9
+    2300084: F4_md_Roof_3m_01_LOD0
+    2300086: F4_md_Roof_3m_01_LOD1
+    2300088: F4_md_Roof_3m_01_coll_01
+    2300090: F4_md_Roof_3m_01_coll_02
+    2300092: F4_md_Roof_3m_01_col_01
+    2300094: F4_md_Roof_3m_01_col_02
+    3300000: Roof_front
+    3300002: Roof_front 1
+    3300004: Roof_front 2
+    3300006: Roof_front 3
+    3300008: //RootNode
+    3300010: F4_md_Roof_01_1
+    3300012: F4_md_Roof_01_10
+    3300014: F4_md_Roof_01_11
+    3300016: F4_md_Roof_01_12
+    3300018: F4_md_Roof_01_13
+    3300020: F4_md_Roof_01_14
+    3300022: F4_md_Roof_01_2
+    3300024: F4_md_Roof_01_3
+    3300026: F4_md_Roof_01_4
+    3300028: F4_md_Roof_01_5
+    3300030: F4_md_Roof_01_6
+    3300032: F4_md_Roof_01_7
+    3300034: F4_md_Roof_01_8
+    3300036: F4_md_Roof_01_9
+    3300038: rebuilt
+    3300040: rebuilt1
+    3300042: rebuilt13
+    3300044: rebuilt17
+    3300046: rebuilt18
+    3300048: rebuilt19
+    3300050: rebuilt2
+    3300052: rebuilt20
+    3300054: rebuilt21
+    3300056: rebuilt22
+    3300058: rebuilt23
+    3300060: rebuilt24
+    3300062: rebuilt25
+    3300064: rebuilt26
+    3300066: rebuilt27
+    3300068: rebuilt28
+    3300070: rebuilt29
+    3300072: rebuilt3
+    3300074: rebuilt30
+    3300076: rebuilt31
+    3300078: rebuilt5
+    3300080: rebuilt8
+    3300082: rebuilt9
+    3300084: F4_md_Roof_3m_01_LOD0
+    3300086: F4_md_Roof_3m_01_LOD1
+    3300088: F4_md_Roof_3m_01_coll_01
+    3300090: F4_md_Roof_3m_01_coll_02
+    3300092: F4_md_Roof_3m_01_col_01
+    3300094: F4_md_Roof_3m_01_col_02
+    4300000: Roof_front
+    4300002: Roof_front
+    4300004: Roof_front
+    4300006: Roof_front
+    4300008: F4_md_Roof_3m_02
+    4300010: F4_md_Roof_01_1
+    4300012: F4_md_Roof_01_2
+    4300014: F4_md_Roof_01_3
+    4300016: F4_md_Roof_01_4
+    4300018: F4_md_Roof_01_5
+    4300020: F4_md_Roof_01_6
+    4300022: F4_md_Roof_01_7
+    4300024: F4_md_Roof_01_8
+    4300026: F4_md_Roof_01_9
+    4300028: F4_md_Roof_01_10
+    4300030: F4_md_Roof_01_11
+    4300032: F4_md_Roof_01_12
+    4300034: F4_md_Roof_01_13
+    4300036: F4_md_Roof_01_14
+    4300038: rebuilt
+    4300040: rebuilt1
+    4300042: rebuilt2
+    4300044: rebuilt3
+    4300046: rebuilt5
+    4300048: rebuilt8
+    4300050: rebuilt9
+    4300052: rebuilt13
+    4300054: rebuilt17
+    4300056: rebuilt18
+    4300058: rebuilt19
+    4300060: rebuilt20
+    4300062: rebuilt21
+    4300064: rebuilt22
+    4300066: rebuilt23
+    4300068: rebuilt24
+    4300070: rebuilt25
+    4300072: rebuilt26
+    4300074: rebuilt27
+    4300076: rebuilt28
+    4300078: rebuilt29
+    4300080: rebuilt30
+    4300082: rebuilt31
+    4300084: F4_md_Roof_3m_01_LOD0
+    4300086: F4_md_Roof_3m_01_LOD1
+    4300088: F4_md_Roof_3m_01_coll_01
+    4300090: F4_md_Roof_3m_01_coll_02
+    4300092: F4_md_Roof_3m_01_col_01
+    4300094: F4_md_Roof_3m_01_col_02
+    9500000: //RootNode
+    20500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F4_roof_bake_mat
+    second: {fileID: 2100000, guid: a5f4bd37c3fa61d4c9d731efdfca4abf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F_Defaultwall_mat
+    second: {fileID: 2100000, guid: d6a2df482566aa94791c689148464a9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: colMat
+    second: {fileID: 2100000, guid: 3e25188dceff8044f82b1f93df03b707, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: e4e07c61ce83b8d419d3ae05668dc2b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3
+    second: {fileID: 2100000, guid: a5f4bd37c3fa61d4c9d731efdfca4abf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_detail_roof_04
+    second: {fileID: 2100000, guid: 53a779f0d15c8e447ac0e0b8ba46b72b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wall_exterior_01_blnd_a
+    second: {fileID: 2100000, guid: b962e08471bf9734c814d9670251cec7, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

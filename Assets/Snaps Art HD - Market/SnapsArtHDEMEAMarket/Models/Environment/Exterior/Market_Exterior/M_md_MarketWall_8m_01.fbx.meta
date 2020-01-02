@@ -1,0 +1,368 @@
+fileFormatVersion: 2
+guid: 1d630d53f0890f6428513d1392aee993
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: M_md_MarketWall_8m_01
+    100002: //RootNode
+    100004: M_md_MarketWall_8m_01 1
+    100006: M_md_MarketWall_8m_01_LOD0
+    100008: M_md_MarketWall_8m_01_LOD1
+    100010: M_md_MarketWall_8m_01_glass_LOD0
+    100012: M_md_MarketWall_8m_01_glass_LOD1
+    100014: M_md_MarketWall_8m_01_dyn_LOD0
+    100016: M_md_MarketWall_8m_01_dyn_LOD1
+    100018: M_md_MarketWall_8m_01_col
+    400000: M_md_MarketWall_8m_01
+    400002: //RootNode
+    400004: M_md_MarketWall_8m_01 1
+    400006: M_md_MarketWall_8m_01_LOD0
+    400008: M_md_MarketWall_8m_01_LOD1
+    400010: M_md_MarketWall_8m_01_glass_LOD0
+    400012: M_md_MarketWall_8m_01_glass_LOD1
+    400014: M_md_MarketWall_8m_01_dyn_LOD0
+    400016: M_md_MarketWall_8m_01_dyn_LOD1
+    400018: M_md_MarketWall_8m_01_col
+    2100000: 01 - Default4
+    2100002: Metal4
+    2100004: Column_main_Entrance_wire_086086088
+    2100006: 02 - Default3
+    2100008: Glass yellow3
+    2100010: Glass red1
+    2100012: 01 - Default
+    2100014: 'Material #1972'
+    2100016: Walls3
+    2100018: Wall_White1
+    2100020: StoneBlocks_A2
+    2100022: Walls6
+    2100024: Metal_forge2
+    2100026: Metaltrim_windows2
+    2100028: Glass5
+    2100030: TrimSet_OrnamentTiles2
+    2100032: Tiles_Ornate_Lower2
+    2100034: stone_blocks_01_b
+    2100036: metal_04_a
+    2100038: trimsheet_01_a
+    2100040: glass_01_a
+    2100042: wall_interior_01_a
+    2100044: trimsheet_02_a
+    2100046: wall_exterior_02_a
+    2100048: wall_exterior_04_a
+    2100050: wall_exterior_03_a
+    2100052: stone_blocks_01_a
+    2100054: trimsheet_03_a
+    2100056: m_stone_blocks_01_b
+    2100058: m_copper_01_a
+    2100060: m_trimsheet_01_a
+    2100062: m_wall_exterior_03_e
+    2100064: m_metal_04_a
+    2100066: m_wall_interior_01_a
+    2100068: m_trimsheet_02_a
+    2100070: m_wall_exterior_02_a
+    2100072: m_stone_blocks_01_a
+    2100074: m_wall_exterior_03_a
+    2100076: colMat
+    2300000: M_md_MarketWall_8m_01
+    2300002: M_md_MarketWall_8m_01 1
+    2300004: //RootNode
+    2300006: M_md_MarketWall_8m_01_LOD0
+    2300008: M_md_MarketWall_8m_01_LOD1
+    2300010: M_md_MarketWall_8m_01_glass_LOD0
+    2300012: M_md_MarketWall_8m_01_glass_LOD1
+    2300014: M_md_MarketWall_8m_01_dyn_LOD0
+    2300016: M_md_MarketWall_8m_01_dyn_LOD1
+    2300018: M_md_MarketWall_8m_01_col
+    3300000: M_md_MarketWall_8m_01
+    3300002: M_md_MarketWall_8m_01 1
+    3300004: //RootNode
+    3300006: M_md_MarketWall_8m_01_LOD0
+    3300008: M_md_MarketWall_8m_01_LOD1
+    3300010: M_md_MarketWall_8m_01_glass_LOD0
+    3300012: M_md_MarketWall_8m_01_glass_LOD1
+    3300014: M_md_MarketWall_8m_01_dyn_LOD0
+    3300016: M_md_MarketWall_8m_01_dyn_LOD1
+    3300018: M_md_MarketWall_8m_01_col
+    4300000: M_md_MarketWall_8m_01
+    4300002: M_md_MarketWall_8m_04
+    4300004: M_md_MarketWall_8m_01_LOD0
+    4300006: M_md_MarketWall_8m_01_LOD1
+    4300008: M_md_MarketWall_8m_01_glass_LOD0
+    4300010: M_md_MarketWall_8m_01_glass_LOD1
+    4300012: M_md_MarketWall_8m_01_dyn_LOD0
+    4300014: M_md_MarketWall_8m_01_dyn_LOD1
+    4300016: M_md_MarketWall_8m_01_col
+    9500000: //RootNode
+    20500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default4
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 02 - Default3
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Column_main_Entrance_wire_086086088
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass red1
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass yellow3
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #1972'
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal4
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: StoneBlocks_A2
+    second: {fileID: 2100000, guid: 34642c95e59bb084fa01cc2eac6c8e0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tiles_Ornate_Lower2
+    second: {fileID: 2100000, guid: 197467c0fe5608a4eaec7e397299c74d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: TrimSet_OrnamentTiles2
+    second: {fileID: 2100000, guid: 1c8c0a0c031f8e84b998962469d181bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall_White1
+    second: {fileID: 2100000, guid: 197467c0fe5608a4eaec7e397299c74d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Walls3
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Walls6
+    second: {fileID: 2100000, guid: 197467c0fe5608a4eaec7e397299c74d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert17
+    second: {fileID: 2100000, guid: 6bd67bbce8f04214981d7ae5312672cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_detail_ornament_03_a
+    second: {fileID: 2100000, guid: 88b39aabae86aac47a2aff977e646976, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_glass_01_a_int
+    second: {fileID: 2100000, guid: 586fc5516fec5f9458b5a14620cfcd6c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_glass_01_blnd_a
+    second: {fileID: 2100000, guid: a06dc4532b0d62f4aaa764e97fa7299f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_glass_02_a
+    second: {fileID: 2100000, guid: 80d0effffd5c22b46b370e7c9ae254da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_stone_blocks_01_b
+    second: {fileID: 2100000, guid: f0ec51d12391f0e4bb0b4edcebf0545c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_stone_blocks_01_blnd_b
+    second: {fileID: 2100000, guid: 6643f0662739c154ba7076f01e774904, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_trimsheet_02_a
+    second: {fileID: 2100000, guid: 1c8c0a0c031f8e84b998962469d181bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_trimsheet_05_a
+    second: {fileID: 2100000, guid: c5e886aff5c3b504989e143dbdc35faa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wall_exterior_01_a
+    second: {fileID: 2100000, guid: 1db74be74eae83340aaf0d380ce81c66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wall_exterior_02_a
+    second: {fileID: 2100000, guid: 197467c0fe5608a4eaec7e397299c74d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wall_interior_01_a
+    second: {fileID: 2100000, guid: e750d7b2dc0af9f439d4355e15482b90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wall_interior_01_blnd_a
+    second: {fileID: 2100000, guid: 16e3ae8c924c8e34a9e788f6a18309ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal_04_a
+    second: {fileID: 2100000, guid: 808241c4fc1772848b5541ecbe0783e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone_blocks_01_a
+    second: {fileID: 2100000, guid: 34642c95e59bb084fa01cc2eac6c8e0d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: stone_blocks_01_b
+    second: {fileID: 2100000, guid: f0ec51d12391f0e4bb0b4edcebf0545c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trimsheet_01_a
+    second: {fileID: 2100000, guid: 93486ee56920efc428184fa95bb786ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trimsheet_02_a
+    second: {fileID: 2100000, guid: 1c8c0a0c031f8e84b998962469d181bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trimsheet_03_a
+    second: {fileID: 2100000, guid: 47750b1732755044f945486167a3692e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_exterior_02_a
+    second: {fileID: 2100000, guid: 197467c0fe5608a4eaec7e397299c74d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_exterior_03_a
+    second: {fileID: 2100000, guid: 657702644d0d79f4eae90526f4d66c7f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_exterior_04_a
+    second: {fileID: 2100000, guid: 3a4aeb9688663e44092a7ef26ba2838b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall_interior_01_a
+    second: {fileID: 2100000, guid: e750d7b2dc0af9f439d4355e15482b90, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

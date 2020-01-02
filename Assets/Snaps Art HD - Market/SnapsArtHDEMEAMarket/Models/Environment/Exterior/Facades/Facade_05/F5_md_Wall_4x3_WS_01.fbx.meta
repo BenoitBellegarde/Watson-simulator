@@ -1,0 +1,351 @@
+fileFormatVersion: 2
+guid: 23aa10d8fd244bb4a850c95ba0629772
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: wall_ornate_WS
+    100004: wall_ornate_WS 1
+    100006: wall_ornate_WS 2
+    100008: wall_ornate_WS 3
+    100010: wall_ornate_WS 4
+    100012: wall_ornate_WS 5
+    100014: wall_ornate_WS 6
+    100016: wall_ornate_WS1
+    100018: F5_md_Wall_4x3_WS_01_1
+    100020: F5_md_Wall_4x3_WS_01_2
+    100022: F5_md_Wall_4x3_WS_01_3
+    100024: F5_md_Wall_4x3_WS_01_4
+    100026: F5_md_Wall_4x3_WS_01_5
+    100028: F5_md_Wall_4x3_WS_01_6
+    100030: F5_md_Wall_4x3_WS_01_7
+    100032: F5_md_Wall_4x3_WS_01_8
+    100034: Arch_low
+    100036: CnrOrnament_low
+    100038: Grate_low
+    100040: Gratebar_low
+    100042: Medal_low
+    100044: OrnamentA_low
+    100046: OrnamentB_low
+    100048: OrnamentC_low
+    100050: OrnamentD_low
+    100052: Pillar_low
+    100054: PillarS_low
+    100056: Pillartop_low
+    100058: Plate_low
+    100060: Stripes_low
+    100062: Windowsill_low
+    100064: F5_md_Wall_4x3_WS_01_LOD0
+    100066: F5_md_Wall_4x3_WS_01_LOD1
+    100068: F5_md_Wall_4x3_WS_01_coll_01
+    100070: F5_md_Wall_4x3_WS_01_coll_02
+    100072: F5_md_Wall_4x3_WS_01_coll_03
+    100074: F5_md_Wall_4x3_WS_01_coll_04
+    100076: F5_md_Wall_4x3_WS_01_coll_05
+    100078: F5_md_Wall_4x3_WS_01_col_01
+    100080: F5_md_Wall_4x3_WS_01_col_02
+    100082: F5_md_Wall_4x3_WS_01_col_03
+    100084: F5_md_Wall_4x3_WS_01_col_04
+    100086: F5_md_Wall_4x3_WS_01_col_05
+    400000: //RootNode
+    400002: wall_ornate_WS
+    400004: wall_ornate_WS 1
+    400006: wall_ornate_WS 2
+    400008: wall_ornate_WS 3
+    400010: wall_ornate_WS 4
+    400012: wall_ornate_WS 5
+    400014: wall_ornate_WS 6
+    400016: wall_ornate_WS1
+    400018: F5_md_Wall_4x3_WS_01_1
+    400020: F5_md_Wall_4x3_WS_01_2
+    400022: F5_md_Wall_4x3_WS_01_3
+    400024: F5_md_Wall_4x3_WS_01_4
+    400026: F5_md_Wall_4x3_WS_01_5
+    400028: F5_md_Wall_4x3_WS_01_6
+    400030: F5_md_Wall_4x3_WS_01_7
+    400032: F5_md_Wall_4x3_WS_01_8
+    400034: Arch_low
+    400036: CnrOrnament_low
+    400038: Grate_low
+    400040: Gratebar_low
+    400042: Medal_low
+    400044: OrnamentA_low
+    400046: OrnamentB_low
+    400048: OrnamentC_low
+    400050: OrnamentD_low
+    400052: Pillar_low
+    400054: PillarS_low
+    400056: Pillartop_low
+    400058: Plate_low
+    400060: Stripes_low
+    400062: Windowsill_low
+    400064: F5_md_Wall_4x3_WS_01_LOD0
+    400066: F5_md_Wall_4x3_WS_01_LOD1
+    400068: F5_md_Wall_4x3_WS_01_coll_01
+    400070: F5_md_Wall_4x3_WS_01_coll_02
+    400072: F5_md_Wall_4x3_WS_01_coll_03
+    400074: F5_md_Wall_4x3_WS_01_coll_04
+    400076: F5_md_Wall_4x3_WS_01_coll_05
+    400078: F5_md_Wall_4x3_WS_01_col_01
+    400080: F5_md_Wall_4x3_WS_01_col_02
+    400082: F5_md_Wall_4x3_WS_01_col_03
+    400084: F5_md_Wall_4x3_WS_01_col_04
+    400086: F5_md_Wall_4x3_WS_01_col_05
+    2100000: lambert2
+    2100002: lambert3
+    2100004: lambert1
+    2100006: 01 - Default
+    2100008: m_wall_exterior_01_a
+    2100010: m_detail_balcony_05
+    2300000: wall_ornate_WS
+    2300002: wall_ornate_WS 1
+    2300004: wall_ornate_WS 2
+    2300006: wall_ornate_WS 3
+    2300008: wall_ornate_WS 4
+    2300010: wall_ornate_WS 5
+    2300012: wall_ornate_WS 6
+    2300014: wall_ornate_WS1
+    2300016: //RootNode
+    2300018: F5_md_Wall_4x3_WS_01_1
+    2300020: F5_md_Wall_4x3_WS_01_2
+    2300022: F5_md_Wall_4x3_WS_01_3
+    2300024: F5_md_Wall_4x3_WS_01_4
+    2300026: F5_md_Wall_4x3_WS_01_5
+    2300028: F5_md_Wall_4x3_WS_01_6
+    2300030: F5_md_Wall_4x3_WS_01_7
+    2300032: F5_md_Wall_4x3_WS_01_8
+    2300034: Arch_low
+    2300036: CnrOrnament_low
+    2300038: Grate_low
+    2300040: Gratebar_low
+    2300042: Medal_low
+    2300044: OrnamentA_low
+    2300046: OrnamentB_low
+    2300048: OrnamentC_low
+    2300050: OrnamentD_low
+    2300052: Pillar_low
+    2300054: PillarS_low
+    2300056: Pillartop_low
+    2300058: Plate_low
+    2300060: Stripes_low
+    2300062: Windowsill_low
+    2300064: F5_md_Wall_4x3_WS_01_LOD0
+    2300066: F5_md_Wall_4x3_WS_01_LOD1
+    2300068: F5_md_Wall_4x3_WS_01_coll_01
+    2300070: F5_md_Wall_4x3_WS_01_coll_02
+    2300072: F5_md_Wall_4x3_WS_01_coll_03
+    2300074: F5_md_Wall_4x3_WS_01_coll_04
+    2300076: F5_md_Wall_4x3_WS_01_coll_05
+    2300078: F5_md_Wall_4x3_WS_01_col_01
+    2300080: F5_md_Wall_4x3_WS_01_col_02
+    2300082: F5_md_Wall_4x3_WS_01_col_03
+    2300084: F5_md_Wall_4x3_WS_01_col_04
+    2300086: F5_md_Wall_4x3_WS_01_col_05
+    3300000: wall_ornate_WS
+    3300002: wall_ornate_WS 1
+    3300004: wall_ornate_WS 2
+    3300006: wall_ornate_WS 3
+    3300008: wall_ornate_WS 4
+    3300010: wall_ornate_WS 5
+    3300012: wall_ornate_WS 6
+    3300014: wall_ornate_WS1
+    3300016: //RootNode
+    3300018: F5_md_Wall_4x3_WS_01_1
+    3300020: F5_md_Wall_4x3_WS_01_2
+    3300022: F5_md_Wall_4x3_WS_01_3
+    3300024: F5_md_Wall_4x3_WS_01_4
+    3300026: F5_md_Wall_4x3_WS_01_5
+    3300028: F5_md_Wall_4x3_WS_01_6
+    3300030: F5_md_Wall_4x3_WS_01_7
+    3300032: F5_md_Wall_4x3_WS_01_8
+    3300034: Arch_low
+    3300036: CnrOrnament_low
+    3300038: Grate_low
+    3300040: Gratebar_low
+    3300042: Medal_low
+    3300044: OrnamentA_low
+    3300046: OrnamentB_low
+    3300048: OrnamentC_low
+    3300050: OrnamentD_low
+    3300052: Pillar_low
+    3300054: PillarS_low
+    3300056: Pillartop_low
+    3300058: Plate_low
+    3300060: Stripes_low
+    3300062: Windowsill_low
+    3300064: F5_md_Wall_4x3_WS_01_LOD0
+    3300066: F5_md_Wall_4x3_WS_01_LOD1
+    3300068: F5_md_Wall_4x3_WS_01_coll_01
+    3300070: F5_md_Wall_4x3_WS_01_coll_02
+    3300072: F5_md_Wall_4x3_WS_01_coll_03
+    3300074: F5_md_Wall_4x3_WS_01_coll_04
+    3300076: F5_md_Wall_4x3_WS_01_coll_05
+    3300078: F5_md_Wall_4x3_WS_01_col_01
+    3300080: F5_md_Wall_4x3_WS_01_col_02
+    3300082: F5_md_Wall_4x3_WS_01_col_03
+    3300084: F5_md_Wall_4x3_WS_01_col_04
+    3300086: F5_md_Wall_4x3_WS_01_col_05
+    4300000: wall_ornate_WS
+    4300002: wall_ornate_WS
+    4300004: wall_ornate_WS
+    4300006: wall_ornate_WS
+    4300008: wall_ornate_WS1
+    4300010: wall_ornate_WS
+    4300012: wall_ornate_WS
+    4300014: wall_ornate_WS
+    4300016: F5_md_Wall_4x3_WS_02
+    4300018: F5_md_Wall_4x3_WS_01_1
+    4300020: F5_md_Wall_4x3_WS_01_2
+    4300022: F5_md_Wall_4x3_WS_01_3
+    4300024: F5_md_Wall_4x3_WS_01_4
+    4300026: F5_md_Wall_4x3_WS_01_5
+    4300028: F5_md_Wall_4x3_WS_01_6
+    4300030: F5_md_Wall_4x3_WS_01_7
+    4300032: F5_md_Wall_4x3_WS_01_8
+    4300034: Grate_low
+    4300036: Pillar_low
+    4300038: Stripes_low
+    4300040: CnrOrnament_low
+    4300042: Pillartop_low
+    4300044: Arch_low
+    4300046: Gratebar_low
+    4300048: Medal_low
+    4300050: Plate_low
+    4300052: OrnamentC_low
+    4300054: OrnamentA_low
+    4300056: OrnamentB_low
+    4300058: Windowsill_low
+    4300060: PillarS_low
+    4300062: OrnamentD_low
+    4300064: F5_md_Wall_4x3_WS_01_LOD0
+    4300066: F5_md_Wall_4x3_WS_01_LOD1
+    4300068: F5_md_Wall_4x3_WS_01_coll_01
+    4300070: F5_md_Wall_4x3_WS_01_coll_02
+    4300072: F5_md_Wall_4x3_WS_01_coll_03
+    4300074: F5_md_Wall_4x3_WS_01_coll_04
+    4300076: F5_md_Wall_4x3_WS_01_coll_05
+    4300078: F5_md_Wall_4x3_WS_01_col_01
+    4300080: F5_md_Wall_4x3_WS_01_col_02
+    4300082: F5_md_Wall_4x3_WS_01_col_03
+    4300084: F5_md_Wall_4x3_WS_01_col_04
+    4300086: F5_md_Wall_4x3_WS_01_col_05
+    9500000: //RootNode
+    20500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: colMat
+    second: {fileID: 2100000, guid: 3e25188dceff8044f82b1f93df03b707, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: df2dd3f685795de4db145f5f48f6d020, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: 5b2121960b66e124fa984439732643aa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert3
+    second: {fileID: 2100000, guid: 2deaf3f550184f3409b2e581717e4616, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_detail_balcony_05
+    second: {fileID: 2100000, guid: 4dbcbafcca0b1db47b97b971382aa15c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wall_exterior_01_blnd_a
+    second: {fileID: 2100000, guid: b962e08471bf9734c814d9670251cec7, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

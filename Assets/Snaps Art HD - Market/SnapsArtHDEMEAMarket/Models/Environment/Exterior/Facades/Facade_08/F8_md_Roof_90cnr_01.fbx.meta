@@ -1,0 +1,241 @@
+fileFormatVersion: 2
+guid: 386a8e24a53622a45afdec2936f398ca
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: pCube105
+    100004: polySurface163
+    100006: polySurface165
+    100008: polySurface170
+    100010: F8_md_Roof_90cnr_01_1
+    100012: F8_md_Roof_90cnr_01_2
+    100014: F8_md_Roof_90cnr_01_3
+    100016: F8_md_Roof_90cnr_01_4
+    100018: roof31
+    100020: s1
+    100022: s2
+    100024: s3
+    100026: s4
+    100028: s6
+    100030: F8_md_Roof_90cnr_01_coll_01
+    100032: F8_md_Roof_90cnr_01_LOD0
+    100034: F8_md_Roof_90cnr_01_LOD1
+    100036: F8_md_Roof_90cnr_01_col_01
+    400000: //RootNode
+    400002: pCube105
+    400004: polySurface163
+    400006: polySurface165
+    400008: polySurface170
+    400010: F8_md_Roof_90cnr_01_1
+    400012: F8_md_Roof_90cnr_01_2
+    400014: F8_md_Roof_90cnr_01_3
+    400016: F8_md_Roof_90cnr_01_4
+    400018: roof31
+    400020: s1
+    400022: s2
+    400024: s3
+    400026: s4
+    400028: s6
+    400030: F8_md_Roof_90cnr_01_coll_01
+    400032: F8_md_Roof_90cnr_01_LOD0
+    400034: F8_md_Roof_90cnr_01_LOD1
+    400036: F8_md_Roof_90cnr_01_col_01
+    2100000: lambert1
+    2100002: wall
+    2100004: roof
+    2100006: wood
+    2100008: wall3
+    2100010: m_wood_03_c
+    2100012: m_roof_tiles_01_blnd_a
+    2300000: pCube105
+    2300002: polySurface163
+    2300004: polySurface165
+    2300006: polySurface170
+    2300008: //RootNode
+    2300010: F8_md_Roof_90cnr_01_1
+    2300012: F8_md_Roof_90cnr_01_2
+    2300014: F8_md_Roof_90cnr_01_3
+    2300016: F8_md_Roof_90cnr_01_4
+    2300018: roof31
+    2300020: s1
+    2300022: s2
+    2300024: s3
+    2300026: s4
+    2300028: s6
+    2300030: F8_md_Roof_90cnr_01_coll_01
+    2300032: F8_md_Roof_90cnr_01_LOD0
+    2300034: F8_md_Roof_90cnr_01_LOD1
+    2300036: F8_md_Roof_90cnr_01_col_01
+    3300000: pCube105
+    3300002: polySurface163
+    3300004: polySurface165
+    3300006: polySurface170
+    3300008: //RootNode
+    3300010: F8_md_Roof_90cnr_01_1
+    3300012: F8_md_Roof_90cnr_01_2
+    3300014: F8_md_Roof_90cnr_01_3
+    3300016: F8_md_Roof_90cnr_01_4
+    3300018: roof31
+    3300020: s1
+    3300022: s2
+    3300024: s3
+    3300026: s4
+    3300028: s6
+    3300030: F8_md_Roof_90cnr_01_coll_01
+    3300032: F8_md_Roof_90cnr_01_LOD0
+    3300034: F8_md_Roof_90cnr_01_LOD1
+    3300036: F8_md_Roof_90cnr_01_col_01
+    4300000: polySurface163
+    4300002: polySurface165
+    4300004: polySurface170
+    4300006: pCube105
+    4300008: F8_md_Roof_90cnr_02
+    4300010: F8_md_Roof_90cnr_01_1
+    4300012: F8_md_Roof_90cnr_01_2
+    4300014: F8_md_Roof_90cnr_01_3
+    4300016: F8_md_Roof_90cnr_01_4
+    4300018: s1
+    4300020: s2
+    4300022: s3
+    4300024: s4
+    4300026: s6
+    4300028: roof31
+    4300030: F8_md_Roof_90cnr_01_LOD0
+    4300032: F8_md_Roof_90cnr_01_LOD1
+    4300034: F8_md_Roof_90cnr_01_coll_01
+    4300036: F8_md_Roof_90cnr_01_col_01
+    20500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: colMat
+    second: {fileID: 2100000, guid: 3e25188dceff8044f82b1f93df03b707, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_roof_tiles_01_blnd_a
+    second: {fileID: 2100000, guid: af6999b70f032ce47b38615be8576d05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wood_03_c
+    second: {fileID: 2100000, guid: 64227436700be1642b7f538fab198c56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wood_04_a
+    second: {fileID: 2100000, guid: ea8420c1423d2e64a9d591ea613952c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wood_04_a1
+    second: {fileID: 2100000, guid: 06f0e79e009025e4bbe6f8d6fafd8e93, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roof
+    second: {fileID: 2100000, guid: 51fc95c9cb723ad4c93fb858881b6316, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall
+    second: {fileID: 2100000, guid: df2dd3f685795de4db145f5f48f6d020, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wall3
+    second: {fileID: 2100000, guid: 1f8080ea0e0d9b34ea14e97cc9a30244, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

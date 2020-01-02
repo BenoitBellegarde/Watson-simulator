@@ -1,0 +1,212 @@
+fileFormatVersion: 2
+guid: effe1bbd821208e45945774bb75f1576
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: pCube71
+    100004: pCube77
+    100006: F_Window_L_02_1
+    100008: F_Window_L_02_2
+    100010: F_Window_L_02_3
+    100012: F_Window_L_02_4
+    100014: pasted__F_Window_L_05
+    100016: polySurface3
+    100018: polySurface6
+    100020: F_Window_L_02_LOD0
+    100022: F_Window_L_02_LOD1
+    100024: F_Window_L_02_coll_01
+    100026: F_Window_L_02_col_01
+    400000: //RootNode
+    400002: pCube71
+    400004: pCube77
+    400006: F_Window_L_02_1
+    400008: F_Window_L_02_2
+    400010: F_Window_L_02_3
+    400012: F_Window_L_02_4
+    400014: pasted__F_Window_L_05
+    400016: polySurface3
+    400018: polySurface6
+    400020: F_Window_L_02_LOD0
+    400022: F_Window_L_02_LOD1
+    400024: F_Window_L_02_coll_01
+    400026: F_Window_L_02_col_01
+    2100000: Default_Material
+    2100002: Wood_trim_01
+    2100004: window_glass_01
+    2300000: pCube71
+    2300002: pCube77
+    2300004: //RootNode
+    2300006: F_Window_L_02_1
+    2300008: F_Window_L_02_2
+    2300010: F_Window_L_02_3
+    2300012: F_Window_L_02_4
+    2300014: pasted__F_Window_L_05
+    2300016: polySurface3
+    2300018: polySurface6
+    2300020: F_Window_L_02_LOD0
+    2300022: F_Window_L_02_LOD1
+    2300024: F_Window_L_02_coll_01
+    2300026: F_Window_L_02_col_01
+    3300000: pCube71
+    3300002: pCube77
+    3300004: //RootNode
+    3300006: F_Window_L_02_1
+    3300008: F_Window_L_02_2
+    3300010: F_Window_L_02_3
+    3300012: F_Window_L_02_4
+    3300014: pasted__F_Window_L_05
+    3300016: polySurface3
+    3300018: polySurface6
+    3300020: F_Window_L_02_LOD0
+    3300022: F_Window_L_02_LOD1
+    3300024: F_Window_L_02_coll_01
+    3300026: F_Window_L_02_col_01
+    4300000: pCube71
+    4300002: pCube77
+    4300004: F_Window_L_05
+    4300006: F_Window_L_02_1
+    4300008: F_Window_L_02_2
+    4300010: F_Window_L_02_3
+    4300012: F_Window_L_02_4
+    4300014: polySurface3
+    4300016: polySurface6
+    4300018: pasted__F_Window_L_05
+    4300020: F_Window_L_02_LOD1
+    4300022: F_Window_L_02_LOD0
+    4300024: F_Window_L_02_coll_01
+    4300026: F_Window_L_02_col_01
+    20500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood_trim_01
+    second: {fileID: 2100000, guid: 34ee9bc0aa0b6244d9b11f9c8a4089f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: colMat
+    second: {fileID: 2100000, guid: 3e25188dceff8044f82b1f93df03b707, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: 46525481d23a0ca42bef897b84aa62b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wall_exterior_03_b
+    second: {fileID: 2100000, guid: ceab4d3a75198dd4bba5ca732105e7af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wood_02_blnd_a
+    second: {fileID: 2100000, guid: 0409f44030f6c6a42aab8a73b866cf0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wood_03_blnd_a
+    second: {fileID: 2100000, guid: cd8ae25954623884080633b10f742559, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__lambert3
+    second: {fileID: 2100000, guid: a59524ef3e0e5a44ca650387c6faefd2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: window_glass_01
+    second: {fileID: 2100000, guid: 1a5ed4b299b828e4c8baacf25ce4715b, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
