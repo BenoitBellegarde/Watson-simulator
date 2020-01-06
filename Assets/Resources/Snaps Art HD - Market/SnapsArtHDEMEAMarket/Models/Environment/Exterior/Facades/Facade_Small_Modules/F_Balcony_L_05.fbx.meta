@@ -1,0 +1,417 @@
+fileFormatVersion: 2
+guid: f487b4b2ae0019c439110865c20f2c99
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: F_md_Balcony_L_end_05_1
+    100004: F_md_Balcony_L_end_05_1 1
+    100006: F_md_Balcony_L_end_05_10
+    100008: F_md_Balcony_L_end_05_2
+    100010: F_md_Balcony_L_end_05_2 1
+    100012: F_md_Balcony_L_end_05_3
+    100014: F_md_Balcony_L_end_05_3 1
+    100016: F_md_Balcony_L_end_05_4
+    100018: F_md_Balcony_L_end_05_4 1
+    100020: F_md_Balcony_L_end_05_5
+    100022: F_md_Balcony_L_end_05_5 1
+    100024: F_md_Balcony_L_end_05_6
+    100026: F_md_Balcony_L_end_05_7
+    100028: F_md_Balcony_L_end_05_8
+    100030: F_md_Balcony_L_end_05_9
+    100032: F_md_Balcony_L_end_05_m1
+    100034: F_md_Balcony_L_end_06
+    100036: F_md_Balcony_L_mid_05_4
+    100038: F_md_Balcony_L_mid_05_5
+    100040: F_md_Balcony_L_mid_05_6
+    100042: F_md_Balcony_L_mid_06
+    100044: F4_md_Roof_90cnr_02
+    100046: F4_md_Roof_90cnr_02 1
+    100048: F_md_Balcony_L_end_05_m3
+    100050: F_md_Balcony_L_end_09
+    100052: F_md_Balcony_L_mid_08
+    100054: group3
+    100056: Object021
+    100058: Object021 1
+    100060: pPlane3
+    100062: pPlane3 1
+    100064: rebuilt33
+    100066: rebuilt34
+    100068: rebuilt35
+    100070: rebuilt37
+    100072: rebuilt38
+    100074: rebuilt39
+    100076: rebuilt40
+    100078: rebuilt42
+    100080: rebuilt42 1
+    100082: rebuilt43
+    100084: rebuilt44
+    100086: rebuilt45
+    100088: rebuilt45 1
+    100090: rebuilt46
+    100092: rebuilt46 1
+    100094: TrimB_low002
+    100096: TrimB_low002 1
+    100098: F_Balcony_L_05_LOD0
+    100100: F_Balcony_L_05_LOD1
+    100102: F_Balcony_L_05_coll_01
+    100104: F_Balcony_L_05_coll_02
+    100106: F_Balcony_L_05_coll_03
+    100108: F_Balcony_L_05_coll_04
+    100110: F_Balcony_L_05_LOD2
+    100112: F_Balcony_L_05_LOD3
+    100114: F_Balcony_L_05_col_01
+    100116: F_Balcony_L_05_col_02
+    100118: F_Balcony_L_05_col_03
+    100120: F_Balcony_L_05_col_04
+    400000: //RootNode
+    400002: F_md_Balcony_L_end_05_1
+    400004: F_md_Balcony_L_end_05_1 1
+    400006: F_md_Balcony_L_end_05_10
+    400008: F_md_Balcony_L_end_05_2
+    400010: F_md_Balcony_L_end_05_2 1
+    400012: F_md_Balcony_L_end_05_3
+    400014: F_md_Balcony_L_end_05_3 1
+    400016: F_md_Balcony_L_end_05_4
+    400018: F_md_Balcony_L_end_05_4 1
+    400020: F_md_Balcony_L_end_05_5
+    400022: F_md_Balcony_L_end_05_5 1
+    400024: F_md_Balcony_L_end_05_6
+    400026: F_md_Balcony_L_end_05_7
+    400028: F_md_Balcony_L_end_05_8
+    400030: F_md_Balcony_L_end_05_9
+    400032: F_md_Balcony_L_end_05_m1
+    400034: F_md_Balcony_L_end_06
+    400036: F_md_Balcony_L_mid_05_4
+    400038: F_md_Balcony_L_mid_05_5
+    400040: F_md_Balcony_L_mid_05_6
+    400042: F_md_Balcony_L_mid_06
+    400044: F4_md_Roof_90cnr_02
+    400046: F4_md_Roof_90cnr_02 1
+    400048: F_md_Balcony_L_end_05_m3
+    400050: F_md_Balcony_L_end_09
+    400052: F_md_Balcony_L_mid_08
+    400054: group3
+    400056: Object021
+    400058: Object021 1
+    400060: pPlane3
+    400062: pPlane3 1
+    400064: rebuilt33
+    400066: rebuilt34
+    400068: rebuilt35
+    400070: rebuilt37
+    400072: rebuilt38
+    400074: rebuilt39
+    400076: rebuilt40
+    400078: rebuilt42
+    400080: rebuilt42 1
+    400082: rebuilt43
+    400084: rebuilt44
+    400086: rebuilt45
+    400088: rebuilt45 1
+    400090: rebuilt46
+    400092: rebuilt46 1
+    400094: TrimB_low002
+    400096: TrimB_low002 1
+    400098: F_Balcony_L_05_LOD0
+    400100: F_Balcony_L_05_LOD1
+    400102: F_Balcony_L_05_coll_01
+    400104: F_Balcony_L_05_coll_02
+    400106: F_Balcony_L_05_coll_03
+    400108: F_Balcony_L_05_coll_04
+    400110: F_Balcony_L_05_LOD2
+    400112: F_Balcony_L_05_LOD3
+    400114: F_Balcony_L_05_col_01
+    400116: F_Balcony_L_05_col_02
+    400118: F_Balcony_L_05_col_03
+    400120: F_Balcony_L_05_col_04
+    2100000: lambert2
+    2100002: lambert4
+    2100004: balcony_bottom
+    2300000: //RootNode
+    2300002: F_md_Balcony_L_end_05_1
+    2300004: F_md_Balcony_L_end_05_1 1
+    2300006: F_md_Balcony_L_end_05_10
+    2300008: F_md_Balcony_L_end_05_2
+    2300010: F_md_Balcony_L_end_05_2 1
+    2300012: F_md_Balcony_L_end_05_3
+    2300014: F_md_Balcony_L_end_05_3 1
+    2300016: F_md_Balcony_L_end_05_4
+    2300018: F_md_Balcony_L_end_05_4 1
+    2300020: F_md_Balcony_L_end_05_5
+    2300022: F_md_Balcony_L_end_05_5 1
+    2300024: F_md_Balcony_L_end_05_6
+    2300026: F_md_Balcony_L_end_05_7
+    2300028: F_md_Balcony_L_end_05_8
+    2300030: F_md_Balcony_L_end_05_9
+    2300032: F_md_Balcony_L_mid_05_4
+    2300034: F_md_Balcony_L_mid_05_5
+    2300036: F_md_Balcony_L_mid_05_6
+    2300038: Object021
+    2300040: Object021 1
+    2300042: pPlane3
+    2300044: pPlane3 1
+    2300046: rebuilt33
+    2300048: rebuilt34
+    2300050: rebuilt35
+    2300052: rebuilt37
+    2300054: rebuilt38
+    2300056: rebuilt39
+    2300058: rebuilt40
+    2300060: rebuilt42
+    2300062: rebuilt42 1
+    2300064: rebuilt43
+    2300066: rebuilt44
+    2300068: rebuilt45
+    2300070: rebuilt45 1
+    2300072: rebuilt46
+    2300074: rebuilt46 1
+    2300076: TrimB_low002
+    2300078: TrimB_low002 1
+    2300080: F_Balcony_L_05_LOD0
+    2300082: F_Balcony_L_05_LOD1
+    2300084: F_Balcony_L_05_coll_01
+    2300086: F_Balcony_L_05_coll_02
+    2300088: F_Balcony_L_05_coll_03
+    2300090: F_Balcony_L_05_coll_04
+    2300092: F_Balcony_L_05_LOD2
+    2300094: F_Balcony_L_05_LOD3
+    2300096: F_Balcony_L_05_col_01
+    2300098: F_Balcony_L_05_col_02
+    2300100: F_Balcony_L_05_col_03
+    2300102: F_Balcony_L_05_col_04
+    3300000: //RootNode
+    3300002: F_md_Balcony_L_end_05_1
+    3300004: F_md_Balcony_L_end_05_1 1
+    3300006: F_md_Balcony_L_end_05_10
+    3300008: F_md_Balcony_L_end_05_2
+    3300010: F_md_Balcony_L_end_05_2 1
+    3300012: F_md_Balcony_L_end_05_3
+    3300014: F_md_Balcony_L_end_05_3 1
+    3300016: F_md_Balcony_L_end_05_4
+    3300018: F_md_Balcony_L_end_05_4 1
+    3300020: F_md_Balcony_L_end_05_5
+    3300022: F_md_Balcony_L_end_05_5 1
+    3300024: F_md_Balcony_L_end_05_6
+    3300026: F_md_Balcony_L_end_05_7
+    3300028: F_md_Balcony_L_end_05_8
+    3300030: F_md_Balcony_L_end_05_9
+    3300032: F_md_Balcony_L_mid_05_4
+    3300034: F_md_Balcony_L_mid_05_5
+    3300036: F_md_Balcony_L_mid_05_6
+    3300038: Object021
+    3300040: Object021 1
+    3300042: pPlane3
+    3300044: pPlane3 1
+    3300046: rebuilt33
+    3300048: rebuilt34
+    3300050: rebuilt35
+    3300052: rebuilt37
+    3300054: rebuilt38
+    3300056: rebuilt39
+    3300058: rebuilt40
+    3300060: rebuilt42
+    3300062: rebuilt42 1
+    3300064: rebuilt43
+    3300066: rebuilt44
+    3300068: rebuilt45
+    3300070: rebuilt45 1
+    3300072: rebuilt46
+    3300074: rebuilt46 1
+    3300076: TrimB_low002
+    3300078: TrimB_low002 1
+    3300080: F_Balcony_L_05_LOD0
+    3300082: F_Balcony_L_05_LOD1
+    3300084: F_Balcony_L_05_coll_01
+    3300086: F_Balcony_L_05_coll_02
+    3300088: F_Balcony_L_05_coll_03
+    3300090: F_Balcony_L_05_coll_04
+    3300092: F_Balcony_L_05_LOD2
+    3300094: F_Balcony_L_05_LOD3
+    3300096: F_Balcony_L_05_col_01
+    3300098: F_Balcony_L_05_col_02
+    3300100: F_Balcony_L_05_col_03
+    3300102: F_Balcony_L_05_col_04
+    4300000: F_Balcony_L_06
+    4300002: F_md_Balcony_L_end_05_1
+    4300004: F_md_Balcony_L_end_05_2
+    4300006: F_md_Balcony_L_end_05_3
+    4300008: F_md_Balcony_L_end_05_4
+    4300010: F_md_Balcony_L_end_05_5
+    4300012: F_md_Balcony_L_end_05_6
+    4300014: F_md_Balcony_L_mid_05_4
+    4300016: F_md_Balcony_L_mid_05_5
+    4300018: F_md_Balcony_L_mid_05_6
+    4300020: F_md_Balcony_L_end_05_7
+    4300022: F_md_Balcony_L_end_05_8
+    4300024: F_md_Balcony_L_end_05_9
+    4300026: F_md_Balcony_L_end_05_10
+    4300028: F_md_Balcony_L_end_05_1
+    4300030: F_md_Balcony_L_end_05_2
+    4300032: F_md_Balcony_L_end_05_3
+    4300034: F_md_Balcony_L_end_05_4
+    4300036: F_md_Balcony_L_end_05_5
+    4300038: TrimB_low002
+    4300040: pPlane3
+    4300042: rebuilt45
+    4300044: rebuilt42
+    4300046: rebuilt46
+    4300048: Object021
+    4300050: rebuilt33
+    4300052: rebuilt34
+    4300054: rebuilt35
+    4300056: rebuilt37
+    4300058: rebuilt38
+    4300060: rebuilt39
+    4300062: rebuilt40
+    4300064: rebuilt43
+    4300066: rebuilt44
+    4300068: TrimB_low002
+    4300070: Object021
+    4300072: pPlane3
+    4300074: rebuilt45
+    4300076: rebuilt42
+    4300078: rebuilt46
+    4300080: F_Balcony_L_05_LOD0
+    4300082: F_Balcony_L_05_LOD1
+    4300084: F_Balcony_L_05_coll_01
+    4300086: F_Balcony_L_05_coll_02
+    4300088: F_Balcony_L_05_coll_03
+    4300090: F_Balcony_L_05_coll_04
+    4300092: F_Balcony_L_05_LOD2
+    4300094: F_Balcony_L_05_LOD3
+    4300096: F_Balcony_L_05_col_01
+    4300098: F_Balcony_L_05_col_02
+    4300100: F_Balcony_L_05_col_03
+    4300102: F_Balcony_L_05_col_04
+    20500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: balcony_bottom
+    second: {fileID: 2100000, guid: eb5c81843058e184796c584edf48d8b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: colMat
+    second: {fileID: 2100000, guid: 3e25188dceff8044f82b1f93df03b707, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert2
+    second: {fileID: 2100000, guid: f681c044285dae0479208c1891d743ec, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_detail_roof_04
+    second: {fileID: 2100000, guid: 53a779f0d15c8e447ac0e0b8ba46b72b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_stone_blocks_01_d
+    second: {fileID: 2100000, guid: 91af50bf0d639e8489102e520b92749f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_stone_rough_a
+    second: {fileID: 2100000, guid: e4e07c61ce83b8d419d3ae05668dc2b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wall_exterior_01_a
+    second: {fileID: 2100000, guid: 1db74be74eae83340aaf0d380ce81c66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wall_exterior_01_a1
+    second: {fileID: 2100000, guid: 953efb20fc8e82845baf34467a995903, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.0625
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

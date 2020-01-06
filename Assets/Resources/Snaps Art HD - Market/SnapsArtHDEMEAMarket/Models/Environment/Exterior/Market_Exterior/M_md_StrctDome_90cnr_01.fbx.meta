@@ -1,0 +1,304 @@
+fileFormatVersion: 2
+guid: ae0c37158ae378c45897c999555e749f
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: M_md_StrctDome_90cnr_01
+    100002: //RootNode
+    100004: M_md_StrctDome_90cnr_01 1
+    100006: M_md_DomeStructure_90cnr_01
+    100008: M_md_DomeStructure_90cnr_01_LOD0
+    100010: M_md_DomeStructure_90cnr_01_LOD1
+    100012: M_md_DomeStructure_90cnr_Roof_01_LOD0
+    100014: M_md_DomeStructure_90cnr_Roof_01_LOD1
+    100016: M_md_StrctDome_90cnr_01_col
+    100018: M_md_DomeStructure_90cnr_01_dyn_LOD0
+    100020: M_md_DomeStructure_90cnr_01_dyn_LOD1
+    100022: M_md_DomeStructure_90cnr_01_stc_LOD0
+    100024: M_md_DomeStructure_90cnr_01_stc_LOD1
+    400000: M_md_StrctDome_90cnr_01
+    400002: //RootNode
+    400004: M_md_StrctDome_90cnr_01 1
+    400006: M_md_DomeStructure_90cnr_01
+    400008: M_md_DomeStructure_90cnr_01_LOD0
+    400010: M_md_DomeStructure_90cnr_01_LOD1
+    400012: M_md_DomeStructure_90cnr_Roof_01_LOD0
+    400014: M_md_DomeStructure_90cnr_Roof_01_LOD1
+    400016: M_md_StrctDome_90cnr_01_col
+    400018: M_md_DomeStructure_90cnr_01_dyn_LOD0
+    400020: M_md_DomeStructure_90cnr_01_dyn_LOD1
+    400022: M_md_DomeStructure_90cnr_01_stc_LOD0
+    400024: M_md_DomeStructure_90cnr_01_stc_LOD1
+    2100000: Metal
+    2100002: 'Material #782'
+    2100004: Wooden_Beams
+    2100006: Roof1
+    2100008: White ceiling
+    2100010: 01 - Default1
+    2100012: 'Material #781'
+    2100014: Metal_trimSet13
+    2100016: Metal_Base12
+    2100018: Roof14
+    2100020: Wood_Ceiling13
+    2100022: trimsheet_01_a
+    2100024: beams_metal_01_a
+    2100026: roof_tiles_01_a
+    2100028: wood_02_c
+    2100030: trimsheet_03_a
+    2100032: m_trimsheet_03_a
+    2100034: m_beams_metal_01_a
+    2100036: m_wood_02_c
+    2100038: colMat
+    2300000: M_md_StrctDome_90cnr_01
+    2300002: M_md_StrctDome_90cnr_01 1
+    2300004: M_md_DomeStructure_90cnr_01
+    2300006: //RootNode
+    2300008: M_md_DomeStructure_90cnr_01_LOD0
+    2300010: M_md_DomeStructure_90cnr_01_LOD1
+    2300012: M_md_DomeStructure_90cnr_Roof_01_LOD0
+    2300014: M_md_DomeStructure_90cnr_Roof_01_LOD1
+    2300016: M_md_StrctDome_90cnr_01_col
+    2300018: M_md_DomeStructure_90cnr_01_dyn_LOD0
+    2300020: M_md_DomeStructure_90cnr_01_dyn_LOD1
+    2300022: M_md_DomeStructure_90cnr_01_stc_LOD0
+    2300024: M_md_DomeStructure_90cnr_01_stc_LOD1
+    3300000: M_md_StrctDome_90cnr_01
+    3300002: M_md_StrctDome_90cnr_01 1
+    3300004: M_md_DomeStructure_90cnr_01
+    3300006: //RootNode
+    3300008: M_md_DomeStructure_90cnr_01_LOD0
+    3300010: M_md_DomeStructure_90cnr_01_LOD1
+    3300012: M_md_DomeStructure_90cnr_Roof_01_LOD0
+    3300014: M_md_DomeStructure_90cnr_Roof_01_LOD1
+    3300016: M_md_StrctDome_90cnr_01_col
+    3300018: M_md_DomeStructure_90cnr_01_dyn_LOD0
+    3300020: M_md_DomeStructure_90cnr_01_dyn_LOD1
+    3300022: M_md_DomeStructure_90cnr_01_stc_LOD0
+    3300024: M_md_DomeStructure_90cnr_01_stc_LOD1
+    4300000: M_md_StrctDome_90cnr_01
+    4300002: M_md_DomeStructure_90cnr_01
+    4300004: M_md_StrctDome_90cnr_02
+    4300006: M_md_DomeStructure_90cnr_01_LOD0
+    4300008: M_md_DomeStructure_90cnr_01_LOD1
+    4300010: M_md_DomeStructure_90cnr_Roof_01_LOD0
+    4300012: M_md_DomeStructure_90cnr_Roof_01_LOD1
+    4300014: M_md_StrctDome_90cnr_01_col
+    4300016: M_md_DomeStructure_90cnr_01_dyn_LOD0
+    4300018: M_md_DomeStructure_90cnr_01_stc_LOD0
+    4300020: M_md_DomeStructure_90cnr_01_dyn_LOD1
+    4300022: M_md_DomeStructure_90cnr_01_stc_LOD1
+    9500000: //RootNode
+    20500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 01 - Default1
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #781'
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #782'
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof1
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roof14
+    second: {fileID: 2100000, guid: 51fc95c9cb723ad4c93fb858881b6316, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White ceiling
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wooden_Beams
+    second: {fileID: 2100000, guid: c5bb413e008d12f4e9988fc728b6271f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: beams_metal_01_a
+    second: {fileID: 2100000, guid: 3f4d28bb59c8e144dacb424828b9de38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 3cc0f0058519dda42825c5d4c9a710bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert17
+    second: {fileID: 2100000, guid: 803d9ee8515ddea478a852624c9ed905, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_beams_metal_01_a
+    second: {fileID: 2100000, guid: 3f4d28bb59c8e144dacb424828b9de38, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_beams_metal_01_blnd_a
+    second: {fileID: 2100000, guid: 251dd079765d1fc4b823d589032c237e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_metal_04_a
+    second: {fileID: 2100000, guid: 808241c4fc1772848b5541ecbe0783e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_roof_tiles_01_a
+    second: {fileID: 2100000, guid: 51fc95c9cb723ad4c93fb858881b6316, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_trimsheet_01_a
+    second: {fileID: 2100000, guid: 93486ee56920efc428184fa95bb786ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_trimsheet_03_a
+    second: {fileID: 2100000, guid: 47750b1732755044f945486167a3692e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_trimsheet_03_blnd_a
+    second: {fileID: 2100000, guid: c1e1f6d38f7d0a544be8a6e9d10e2722, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_trimsheet_05_a
+    second: {fileID: 2100000, guid: c5e886aff5c3b504989e143dbdc35faa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wood_02_blnd_a
+    second: {fileID: 2100000, guid: 0409f44030f6c6a42aab8a73b866cf0b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_wood_02_c
+    second: {fileID: 2100000, guid: 2b93f7c9f226fec4a91f19e9936cf56d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roof_tiles_01_a
+    second: {fileID: 2100000, guid: 51fc95c9cb723ad4c93fb858881b6316, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trimsheet_01_a
+    second: {fileID: 2100000, guid: 93486ee56920efc428184fa95bb786ed, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: trimsheet_03_a
+    second: {fileID: 2100000, guid: 47750b1732755044f945486167a3692e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood_02_c
+    second: {fileID: 2100000, guid: 2b93f7c9f226fec4a91f19e9936cf56d, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

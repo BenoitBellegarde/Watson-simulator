@@ -1,0 +1,188 @@
+﻿
+/***************************************************************************
+*                                                                          *
+*  Copyright (c) Raphaël Ernaelsten (@RaphErnaelsten)                      *
+*  All Rights Reserved.                                                    *
+*                                                                          *
+*  NOTICE: Aura 2 is a commercial project.                                 * 
+*  All information contained herein is, and remains the property of        *
+*  Raphaël Ernaelsten.                                                     *
+*  The intellectual and technical concepts contained herein are            *
+*  proprietary to Raphaël Ernaelsten and are protected by copyright laws.  *
+*  Dissemination of this information or reproduction of this material      *
+*  is strictly forbidden.                                                  *
+*                                                                          *
+***************************************************************************/
+
+// Disables warning about maximum temporary regiters count reached
+#pragma warning( disable : 4714 3571 ) 
+
+#pragma kernel ComputeDataBuffer DIRECTIONAL_LIGHTS_SHADOWS_ONE_CASCADE
+#pragma kernel ComputeDataBuffer DIRECTIONAL_LIGHTS_SHADOWS_TWO_CASCADES
+#pragma kernel ComputeDataBuffer DIRECTIONAL_LIGHTS_SHADOWS_FOUR_CASCADES
+#pragma kernel ComputeDataBuffer SINGLE_PASS_STEREO DIRECTIONAL_LIGHTS_SHADOWS_ONE_CASCADE
+#pragma kernel ComputeDataBuffer SINGLE_PASS_STEREO DIRECTIONAL_LIGHTS_SHADOWS_TWO_CASCADES
+#pragma kernel ComputeDataBuffer SINGLE_PASS_STEREO DIRECTIONAL_LIGHTS_SHADOWS_FOUR_CASCADES
+#pragma kernel ComputeDataBuffer OCCLUSION DIRECTIONAL_LIGHTS_SHADOWS_ONE_CASCADE
+#pragma kernel ComputeDataBuffer OCCLUSION DIRECTIONAL_LIGHTS_SHADOWS_TWO_CASCADES
+#pragma kernel ComputeDataBuffer OCCLUSION DIRECTIONAL_LIGHTS_SHADOWS_FOUR_CASCADES
+#pragma kernel ComputeDataBuffer OCCLUSION SINGLE_PASS_STEREO DIRECTIONAL_LIGHTS_SHADOWS_ONE_CASCADE
+#pragma kernel ComputeDataBuffer OCCLUSION SINGLE_PASS_STEREO DIRECTIONAL_LIGHTS_SHADOWS_TWO_CASCADES
+#pragma kernel ComputeDataBuffer OCCLUSION SINGLE_PASS_STEREO DIRECTIONAL_LIGHTS_SHADOWS_FOUR_CASCADES
+
+// Includes all the common variables and functions
+#include "../Includes/Common.cginc"
+
+// Local variables
+uniform StructuredBuffer<uint> dispatchSizeBuffer;			// size = 3 -> x, y, z
+uniform StructuredBuffer<uint> visibleCellsAmountBuffer;	// size = 1
+uniform StructuredBuffer<CellData> visibleCellsBuffer;		// size = visibleCellsAmountBuffer[0]
+uniform RWTexture3D<FP4> lightingTexture;
+uniform FP4 frustumCornersWorldPositionArray[8];
+uniform FP4 secondaryFrustumCornersWorldPositionArray[8];
+uniform FP baseDensity;
+uniform FP densityFactor;
+uniform FP baseScattering;
+uniform FP4 baseColor;
+uniform FP4 baseTint;
+uniform FP ambientLightingFactor;
+
+// Options
+uniform bool useReprojection;
+uniform bool useVolumes;
+uniform bool useTexture2DMasks;
+uniform bool useTexture3DMasks;
+uniform bool useVolumesNoise;
+uniform bool useAmbientLighting;
+uniform bool useLightProbes;
+uniform bool useDirectionalLights;
+uniform bool useDirectionalLightsShadows;
+uniform bool useSpotLights;
+uniform bool useSpotLightsShadows;
+uniform bool usePointLights;
+uniform bool usePointLightsShadows;
+uniform bool useLightsCookies;
+uniform bool useScattering;
+
+// Includes specific files
+#include "Includes/TemporalReprojection.cginc"
+#include "Includes/VolumeInjection.cginc"
+#include "Includes/AmbientLightingInjection.cginc"
+#include "Includes/LightProbesInjection.cginc"
+#include "Includes/DirectionalLightInjection.cginc"
+#include "Includes/SpotLightInjection.cginc"
+#include "Includes/PointLightInjection.cginc"
+
+// Main function
+[numthreads(VISIBILITY_GROUPS_SIZE_X, VISIBILITY_GROUPS_SIZE_Y, VISIBILITY_GROUPS_SIZE_Z)]
+void ComputeDataBuffer (uint3 dispatchThreadID : SV_DispatchThreadID)
+{
+	uint visibleCellsAmount = visibleCellsAmountBuffer[0];
+	uint3 totalDispatchsize = uint3(dispatchSizeBuffer[0], dispatchSizeBuffer[1], dispatchSizeBuffer[2]) * VISIBILITY_GROUPS_SIZE;
+	uint currentThreadIndex = GetFlattenedIndex(dispatchThreadID, totalDispatchsize);
+	
+	if (currentThreadIndex >= visibleCellsAmount)
+	{ 
+		return;
+	}
+	
+	CellData currentCell = visibleCellsBuffer[currentThreadIndex];
+
+	uint3 id = currentCell.id;
+	FP4 normalizedLocalPos = currentCell.localPosition;
+	FP4 jitteredLocalPos = FP4(currentCell.jitteredLocalPosition, 0.0f);
+
+    FP4 frustumCorners[8] = frustumCornersWorldPositionArray;
+
+	bool isSecondaryFrustum = false;
+	#if defined(SINGLE_PASS_STEREO)
+	if (id.x > (uint)Aura_BufferResolution.x / 2)
+	{
+		isSecondaryFrustum = true;
+		frustumCorners = secondaryFrustumCornersWorldPositionArray;
+	}
+	normalizedLocalPos.x = frac(normalizedLocalPos.x * 2);
+	jitteredLocalPos.x = frac(jitteredLocalPos.x * 2);
+	#endif
+
+	FP3 worldPosition = GetWorldPosition(normalizedLocalPos.xyz, frustumCorners);
+    FP4 viewVector = FP4(normalize(worldPosition.xyz - cameraPosition.xyz), 1.0f);
+	FP3 jitteredWorldPosition = worldPosition;
+	FP4 jitteredViewVector = viewVector;
+	if (useReprojection)
+	{
+		jitteredWorldPosition = GetWorldPosition(jitteredLocalPos.xyz, frustumCorners);
+		jitteredViewVector = FP4(normalize(jitteredWorldPosition.xyz - cameraPosition.xyz), 1.0f);
+	}
+	
+	FP density = baseDensity;
+	FP scattering = baseScattering;
+	FP4 accumulationColor = baseColor;
+	FP3 tint = baseTint.xyz;
+	FP globalIlluminationMask = 0.0f;
+	FP lightProbesMultiplier = 0.0f;
+	FP ambientLightingMultiplier = ambientLightingFactor;
+	FP directIlluminationMultiplier = 1.0f;
+	
+	// Computes Volumes' contributions
+	BRANCH
+    if (useVolumes)
+	{
+        ComputeVolumesInjection(jitteredWorldPosition, worldPosition, accumulationColor.xyz, density, scattering, globalIlluminationMask, lightProbesMultiplier, ambientLightingMultiplier, tint, directIlluminationMultiplier); // Don't jitter volume's noise
+    }
+		
+    FP3 globalIlluminationColor = FP3(0, 0, 0);
+	// Computes the ambient lighting's contribution
+	BRANCH
+    if (useAmbientLighting)
+    {
+        globalIlluminationColor = ComputeAmbientLighting(viewVector, scattering) * ambientLightingMultiplier;
+    }
+	// Computes the light probes' contribution
+	BRANCH
+    if (useLightProbes && globalIlluminationMask > 0)
+    {
+        globalIlluminationColor += ComputeLightProbesInjection(viewVector, normalizedLocalPos.xyz, scattering) * lightProbesMultiplier;
+    }
+    accumulationColor.xyz += globalIlluminationColor;
+                
+	FP3 directIlluminationColor = FP3(0, 0, 0);
+	// Computes Directional Lights' contribution
+	BRANCH
+    if (useDirectionalLights)
+	{
+        FP distanceToCam = GetCameraSpaceDepth(normalizedLocalPos.z);
+        ComputeDirectionalLightsInjection(jitteredWorldPosition, distanceToCam, jitteredViewVector.xyz, directIlluminationColor, useScattering, scattering);
+    }
+        		
+	// Computes Spot Lights' contribution
+	BRANCH
+    if (useSpotLights)
+	{
+        ComputeSpotLightsInjection(jitteredWorldPosition, jitteredViewVector.xyz, directIlluminationColor, useScattering, scattering);
+    }
+                
+	// Computes Point Lights' contribution
+	BRANCH
+    if (usePointLights)
+	{
+        ComputePointLightsInjection(jitteredWorldPosition, jitteredViewVector.xyz, directIlluminationColor, useScattering, scattering);
+    }
+
+	accumulationColor.xyz += directIlluminationColor * directIlluminationMultiplier;
+		
+	// Reprojects data onto previous frame
+	BRANCH
+    if (useReprojection)
+    {
+		FP3 unbiasedWorldPosition = GetWorldPosition(normalizedLocalPos.xyw, frustumCorners);
+        ReprojectPreviousFrame(accumulationColor.xyz, unbiasedWorldPosition, isSecondaryFrustum);
+    } 
+
+	// Formats light color and density
+	accumulationColor.xyz = max(FP3(0.0f, 0.0f, 0.0f), accumulationColor.xyz * tint);
+	accumulationColor.w = density * densityFactor;
+
+	// Writes data into the texture buffer
+	lightingTexture[id] = accumulationColor;
+} 

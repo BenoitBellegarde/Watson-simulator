@@ -1,0 +1,181 @@
+﻿
+/***************************************************************************
+*                                                                          *
+*  Copyright (c) Raphaël Ernaelsten (@RaphErnaelsten)                      *
+*  All Rights Reserved.                                                    *
+*                                                                          *
+*  NOTICE: Aura 2 is a commercial project.                                 * 
+*  All information contained herein is, and remains the property of        *
+*  Raphaël Ernaelsten.                                                     *
+*  The intellectual and technical concepts contained herein are            *
+*  proprietary to Raphaël Ernaelsten and are protected by copyright laws.  *
+*  Dissemination of this information or reproduction of this material      *
+*  is strictly forbidden.                                                  *
+*                                                                          *
+***************************************************************************/
+
+// Disables warnings
+#pragma warning( disable : 4714 3571 3078 ) 
+
+// Intensity measurement functions are :
+//RGB_MEASURE_FUNCTION_UNSCALED_LUMINANCE
+//RGB_MEASURE_FUNCTION_LUMINANCE
+//RGB_MEASURE_FUNCTION_LENGTH
+//RGB_MEASURE_FUNCTION_SCALE
+
+#pragma kernel ApplyDenoisingFilter		RADIUS=1	MEDIAN_APPROXIMATION_REFINING_ITERATIONS=8		RGB_MEASURE_FUNCTION_SCALE
+#pragma kernel ApplyDenoisingFilter		RADIUS=2	MEDIAN_APPROXIMATION_REFINING_ITERATIONS=8		RGB_MEASURE_FUNCTION_SCALE
+#pragma kernel ApplyDenoisingFilter		RADIUS=3	MEDIAN_APPROXIMATION_REFINING_ITERATIONS=8		RGB_MEASURE_FUNCTION_SCALE
+
+#define UNROLLING(x)
+//#define UNROLLING(x) [unroll]
+//#define UNROLLING(x) [unroll(x)]
+//#define UNROLLING(x) [loop]
+
+#define SIZE_1D (RADIUS + 1 + RADIUS)
+#define SIZE (SIZE_1D * SIZE_1D * SIZE_1D)
+
+#include "../Includes/Common.cginc"
+
+uniform StructuredBuffer<uint> dispatchSizeBuffer;			// size = 3 -> x, y, z
+uniform StructuredBuffer<uint> visibleCellsAmountBuffer;	// size = 1
+uniform StructuredBuffer<CellData> visibleCellsBuffer;		// size = visibleCellsAmountBuffer[0]
+uniform Texture3D<FP4> sourceTexture;
+uniform RWTexture3D<FP4> destinationTexture;
+
+FP GetRgbLength(FP3 rgb)
+{
+	return length(rgb);
+}
+
+FP GetRgbScale(FP3 rgb)
+{
+	return max(rgb.x, max(rgb.y, rgb.z));
+}
+
+FP GetRgbLuminance(FP3 rgb)
+{
+    return dot(rgb, FP3(0.299f, 0.587f, 0.114f));
+}
+
+FP GetRgbUnscaledLuminance(FP3 rgb)
+{
+    return GetRgbLuminance(rgb / GetRgbScale(rgb));
+}
+
+FP MeasureRgb(FP3 rgb)
+{
+#if defined(RGB_MEASURE_FUNCTION_UNSCALED_LUMINANCE)
+	return GetRgbUnscaledLuminance(rgb);
+#elif defined(RGB_MEASURE_FUNCTION_LENGTH)
+	return GetRgbLength(rgb);
+#elif defined(RGB_MEASURE_FUNCTION_SCALE)
+	return GetRgbScale(rgb);
+#elif defined(RGB_MEASURE_FUNCTION_LUMINANCE)
+	return GetRgbLuminance(rgb);
+#endif
+}
+
+int ApproximateMedianIndex(FP values[SIZE])
+{
+	FP topValue = values[0];
+	FP bottomvalue = values[0];
+	
+	UNROLLING(SIZE - 1)
+	for (int i = 1; i < SIZE; ++i)
+	{
+		topValue = max(topValue, values[i]);
+		bottomvalue = min(bottomvalue, values[i]);
+	}
+	
+	FP medianValue = (topValue + bottomvalue) * 0.5f;
+	FP interval = (topValue - bottomvalue) * 0.5f;
+	
+	UNROLLING(MEDIAN_APPROXIMATION_REFINING_ITERATIONS)
+	for (int i = 0; i < MEDIAN_APPROXIMATION_REFINING_ITERATIONS; ++i)
+	{
+		int belowMedianCount = 0;
+		UNROLLING(SIZE)
+		for (int j = 0; j < SIZE; ++j)
+		{
+			if (values[j] < medianValue)
+			{
+				++belowMedianCount;
+			}
+		}
+		
+		interval *= 0.5;
+		const int middleIndex = round(SIZE / 2);
+		if (belowMedianCount > middleIndex)
+		{
+		  medianValue -= interval;
+		}
+		else
+		{
+		  medianValue += interval;
+		}
+	}
+	
+	FP oldProximity = abs(values[0] - medianValue);
+	int middleIndex = 0;
+	UNROLLING(SIZE - 1)
+	for (int i = 1; i < SIZE; ++i)
+	{
+		FP newProximity = abs(values[i] - medianValue);
+		if (newProximity < oldProximity)
+		{
+			oldProximity = newProximity;
+			middleIndex = i;
+		}
+	}
+	
+	return middleIndex;
+}
+
+[numthreads(VISIBILITY_GROUPS_SIZE_X, VISIBILITY_GROUPS_SIZE_Y, VISIBILITY_GROUPS_SIZE_Z)]
+void ApplyDenoisingFilter(uint3 dispatchThreadID : SV_DispatchThreadID, uint3 groupID : SV_GroupID, uint3 groupThreadID : SV_GroupThreadID)
+{
+	uint visibleCellsAmount = visibleCellsAmountBuffer[0];
+	uint3 totalDispatchsize = uint3(dispatchSizeBuffer[0], dispatchSizeBuffer[1], dispatchSizeBuffer[2]) * VISIBILITY_GROUPS_SIZE;
+	uint currentThreadIndex = GetFlattenedIndex(dispatchThreadID, totalDispatchsize);
+
+	if (currentThreadIndex >= visibleCellsAmount)
+	{
+		return;
+	}
+
+	CellData currentCell = visibleCellsBuffer[currentThreadIndex];
+
+	uint3 id = currentCell.id;
+
+    FP3 color[SIZE];
+    FP rgbMeasure[SIZE];
+    FP alpha[SIZE];
+	UNROLLING(SIZE_1D)
+    for (int i = 0; i < SIZE_1D; ++i)
+    {
+		int offsetI = i - RADIUS;
+		UNROLLING(SIZE_1D)
+        for (int j = 0; j < SIZE_1D; ++j)
+        {
+			int offsetJ = j - RADIUS;
+			UNROLLING(SIZE_1D)
+            for (int k = 0; k < SIZE_1D; ++k)
+            {
+				int offsetK = k - RADIUS;
+				
+                FP4 texelColor = sourceTexture[clamp(int3(id) + int3(offsetI, offsetJ, offsetK), int3(0,0,0), int3(Aura_BufferResolution.xyz))];
+
+                int index = k * SIZE_1D * SIZE_1D + j * SIZE_1D + i;
+                color[index] = texelColor.xyz;
+                rgbMeasure[index] = MeasureRgb(texelColor.xyz);
+				alpha[index] = texelColor.a;
+            }
+        }
+    }
+	
+    FP3 medianColor = color[ApproximateMedianIndex(rgbMeasure)]; /////////////////////////////////// TODO : handle occluded cells
+	FP medianAlpha = alpha[ApproximateMedianIndex(alpha)];
+
+    destinationTexture[id] = FP4(medianColor, medianAlpha);
+}

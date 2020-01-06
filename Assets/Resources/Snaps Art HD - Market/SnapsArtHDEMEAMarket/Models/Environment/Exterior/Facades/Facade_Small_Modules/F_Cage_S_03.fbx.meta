@@ -1,0 +1,185 @@
+fileFormatVersion: 2
+guid: debdc3a3f1756164a9a7b2e847412332
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: F_md_Balcony_L_mid_01_15
+    100004: F_md_Balcony_L_mid_01_16
+    100006: midpiece_low45
+    100008: midpiece_low46
+    100010: midpiece_low47
+    100012: midpiece_low48
+    100014: midpiece_low49
+    100016: midpiece_low50
+    100018: polySurface279
+    100020: polySurface280
+    100022: F_Cage_S_03_LOD0
+    100024: F_Cage_S_03_LOD1
+    100026: F_Cage_S_03_coll_01
+    100028: F_Cage_S_03_col_01
+    400000: //RootNode
+    400002: F_md_Balcony_L_mid_01_15
+    400004: F_md_Balcony_L_mid_01_16
+    400006: midpiece_low45
+    400008: midpiece_low46
+    400010: midpiece_low47
+    400012: midpiece_low48
+    400014: midpiece_low49
+    400016: midpiece_low50
+    400018: polySurface279
+    400020: polySurface280
+    400022: F_Cage_S_03_LOD0
+    400024: F_Cage_S_03_LOD1
+    400026: F_Cage_S_03_coll_01
+    400028: F_Cage_S_03_col_01
+    2100000: Balcony_Trim_01
+    2300000: //RootNode
+    2300002: F_md_Balcony_L_mid_01_15
+    2300004: F_md_Balcony_L_mid_01_16
+    2300006: midpiece_low45
+    2300008: midpiece_low46
+    2300010: midpiece_low47
+    2300012: midpiece_low48
+    2300014: midpiece_low49
+    2300016: midpiece_low50
+    2300018: polySurface279
+    2300020: polySurface280
+    2300022: F_Cage_S_03_LOD0
+    2300024: F_Cage_S_03_LOD1
+    2300026: F_Cage_S_03_coll_01
+    2300028: F_Cage_S_03_col_01
+    3300000: //RootNode
+    3300002: F_md_Balcony_L_mid_01_15
+    3300004: F_md_Balcony_L_mid_01_16
+    3300006: midpiece_low45
+    3300008: midpiece_low46
+    3300010: midpiece_low47
+    3300012: midpiece_low48
+    3300014: midpiece_low49
+    3300016: midpiece_low50
+    3300018: polySurface279
+    3300020: polySurface280
+    3300022: F_Cage_S_03_LOD0
+    3300024: F_Cage_S_03_LOD1
+    3300026: F_Cage_S_03_coll_01
+    3300028: F_Cage_S_03_col_01
+    4300000: F_Cage_S_04
+    4300002: F_md_Balcony_L_mid_01_16
+    4300004: F_md_Balcony_L_mid_01_15
+    4300006: polySurface279
+    4300008: polySurface280
+    4300010: midpiece_low47
+    4300012: midpiece_low45
+    4300014: midpiece_low48
+    4300016: midpiece_low46
+    4300018: midpiece_low50
+    4300020: midpiece_low49
+    4300022: F_Cage_S_03_LOD0
+    4300024: F_Cage_S_03_LOD1
+    4300026: F_Cage_S_03_coll_01
+    4300028: F_Cage_S_03_col_01
+    20500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Balcony_Trim_01
+    second: {fileID: 2100000, guid: 93fe8ea0dbc62fc439defddc51e8a853, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: colMat
+    second: {fileID: 2100000, guid: 3e25188dceff8044f82b1f93df03b707, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: m_balcony_01
+    second: {fileID: 2100000, guid: 83a328e9a1d2f674abcc508bd465f4d4, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 2
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

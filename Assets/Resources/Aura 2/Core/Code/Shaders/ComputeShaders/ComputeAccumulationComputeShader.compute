@@ -1,0 +1,98 @@
+﻿
+/***************************************************************************
+*                                                                          *
+*  Copyright (c) Raphaël Ernaelsten (@RaphErnaelsten)                      *
+*  All Rights Reserved.                                                    *
+*                                                                          *
+*  NOTICE: Aura 2 is a commercial project.                                 * 
+*  All information contained herein is, and remains the property of        *
+*  Raphaël Ernaelsten.                                                     *
+*  The intellectual and technical concepts contained herein are            *
+*  proprietary to Raphaël Ernaelsten and are protected by copyright laws.  *
+*  Dissemination of this information or reproduction of this material      *
+*  is strictly forbidden.                                                  *
+*                                                                          *
+***************************************************************************/
+
+#include "../Includes/Common.cginc"
+
+uniform Texture3D<FP4> lightingTexture;
+uniform RWTexture3D<FP4> fogVolumeTexture;
+uniform FP4 frustumCornersWorldPositionArray[8];
+uniform FP4 secondaryFrustumCornersWorldPositionArray[8];
+uniform FP extinction;
+uniform Texture2D<int> maximumSliceAmountTexture;
+
+void WriteInOutputTexture(uint3 pos, FP4 colorAndDensity)
+{
+    fogVolumeTexture[pos] = colorAndDensity;
+}
+
+#pragma kernel AccumulateLighting
+#pragma kernel AccumulateLighting SINGLE_PASS_STEREO
+#pragma kernel AccumulateLighting DEBUG
+#pragma kernel AccumulateLighting DEBUG SINGLE_PASS_STEREO
+#pragma kernel AccumulateLighting OCCLUSION
+#pragma kernel AccumulateLighting SINGLE_PASS_STEREO OCCLUSION
+#pragma kernel AccumulateLighting DEBUG OCCLUSION
+#pragma kernel AccumulateLighting DEBUG SINGLE_PASS_STEREO OCCLUSION
+
+[numthreads(NUM_THREAD_X, NUM_THREAD_Y, 1)]
+void AccumulateLighting(uint3 dispatchThreadID : SV_DispatchThreadID)
+{
+	uint3 id;
+	id.xy = dispatchThreadID.xy;
+
+	uint maximumSliceAmount = (uint)Aura_BufferResolution.z;
+#if defined(OCCLUSION)
+	maximumSliceAmount = maximumSliceAmountTexture[id.xy] + 1; // Add 1 since we're gonna iterate
+#endif
+
+	FP3 normalizedLocalPos = FP3(0,0,0);
+	normalizedLocalPos.xy = GetNormalizedLocalLayerPosition(id.xy);
+	
+    FP4 frustumCorners[8] = frustumCornersWorldPositionArray;
+	
+	bool isSecondaryFrustum = false;
+	#if defined(SINGLE_PASS_STEREO)
+	if (id.x > (uint)Aura_BufferResolution.x / 2)
+	{
+		isSecondaryFrustum = true;
+		frustumCorners = secondaryFrustumCornersWorldPositionArray;
+	}
+	normalizedLocalPos.x = frac(normalizedLocalPos.x * 2);
+	#endif
+	
+	FP3 worldPosition = GetWorldPosition(normalizedLocalPos.xyz, frustumCorners); // Z = 0, handles first position in ortho(planar)
+	FP3 previousWorldPosition = worldPosition;
+	half traveledDistance = 0.0f;
+    FP4 currentSliceValue = FP4(0, 0, 0, 1);
+	FP4 nextValue = FP4(0, 0, 0, 0);
+
+	uint z;
+	[loop]
+	for(z = 0; z < maximumSliceAmount; ++z)
+	{
+		id.z = z;
+		nextValue = lightingTexture[id];
+		normalizedLocalPos.z = GetNormalizedLocalDepthWithDepthBias(z);
+		worldPosition = GetWorldPosition(normalizedLocalPos.xyz, frustumCorners);
+		traveledDistance = distance(worldPosition, previousWorldPosition);
+		previousWorldPosition = worldPosition;
+        currentSliceValue = AccumulateFog(currentSliceValue, nextValue, traveledDistance, extinction);
+		WriteInOutputTexture(id, currentSliceValue);
+    }
+
+#if defined(OCCLUSION)
+#if defined(DEBUG)
+	currentSliceValue = FP4(1.0f, 0.0f, 0.0f, 0.0f);
+#endif
+
+	[loop]
+	for (z = maximumSliceAmount; z < (uint)Aura_BufferResolution.z; ++z)
+	{
+		id.z = z;
+		WriteInOutputTexture(id, currentSliceValue);
+	}
+#endif
+}
