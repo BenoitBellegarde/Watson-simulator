@@ -3,9 +3,11 @@ First Unity/C# game starring Watson (my cat) doing stupid things in order to com
 
 **Screenshots :**
 <br>
-<img src="https://i.ibb.co/rcnrtMq/2019-07-18-2301.png" width="512">
-<img src="https://i.ibb.co/4JmJZmq/2019-07-18-2304.png" width="512">
-<img src="https://i.ibb.co/khWvcg0/2019-07-18-2302.png" width="512">
+<img src="https://i.imgur.com/Rxad8mS.jpg" width="512">
+<img src="https://i.imgur.com/KI0LCYa.jpg" width="512">
+<img src="https://i.imgur.com/OXJ1Ge7.jpg" width="512">
+<img src="https://i.imgur.com/g6C2hNv.jpg" width="512">
+
 
 **Objectives :**
   - Create my 1st Unity 3D game and getting used to the software
