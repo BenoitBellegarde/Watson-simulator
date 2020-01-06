@@ -47,7 +47,12 @@ ModelImporter:
     4300008: Bottom_left
     4300010: Top_Left
     4300012: middle_left
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tisch_3-03
+    second: {fileID: 2100000, guid: 21f1480fa16c343459029e6d1217b2a1, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
