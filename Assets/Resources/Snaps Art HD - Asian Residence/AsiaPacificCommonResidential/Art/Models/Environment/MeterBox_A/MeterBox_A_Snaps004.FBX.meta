@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: fb228ab8f508d4549891fe12a43f4ac8
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Geometry_MeterBox_A_LOD00
+    100002: //RootNode
+    100004: Object001
+    100006: Object002
+    100008: Object003
+    100010: Object004
+    100012: Object005
+    100014: Object006
+    100016: Object050
+    100018: Object051
+    100020: Geometry_MeterBox_A_LOD01
+    100022: Geometry_MeterBox_A_LOD02
+    100024: Geometry_MeterBox_A_LOD03
+    400000: Geometry_MeterBox_A_LOD00
+    400002: //RootNode
+    400004: Object001
+    400006: Object002
+    400008: Object003
+    400010: Object004
+    400012: Object005
+    400014: Object006
+    400016: Object050
+    400018: Object051
+    400020: Geometry_MeterBox_A_LOD01
+    400022: Geometry_MeterBox_A_LOD02
+    400024: Geometry_MeterBox_A_LOD03
+    2100000: 01 - Default
+    2100002: 20 - Default
+    2100004: 'Material #0'
+    2100006: 'Material #12'
+    2100008: MeterBox_A
+    2100010: MeterBox_A_Glass
+    2300000: Geometry_MeterBox_A_LOD00
+    2300002: Object001
+    2300004: Object002
+    2300006: Object003
+    2300008: Object004
+    2300010: Object005
+    2300012: Object006
+    2300014: Object050
+    2300016: Object051
+    2300018: Geometry_MeterBox_A_LOD01
+    2300020: Geometry_MeterBox_A_LOD02
+    2300022: Geometry_MeterBox_A_LOD03
+    3300000: Geometry_MeterBox_A_LOD00
+    3300002: Object001
+    3300004: Object002
+    3300006: Object003
+    3300008: Object004
+    3300010: Object005
+    3300012: Object006
+    3300014: Object050
+    3300016: Object051
+    3300018: Geometry_MeterBox_A_LOD01
+    3300020: Geometry_MeterBox_A_LOD02
+    3300022: Geometry_MeterBox_A_LOD03
+    4300000: Geometry_MeterBox_A_LOD00
+    4300002: Object001
+    4300004: Object002
+    4300006: Object005
+    4300008: Object003
+    4300010: Object004
+    4300012: Object006
+    4300014: Object050
+    4300016: Object051
+    4300018: Geometry_MeterBox_A_LOD01
+    4300020: Geometry_MeterBox_A_LOD02
+    4300022: Geometry_MeterBox_A_LOD03
+    20500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 20 - Default
+    second: {fileID: 2100000, guid: a49231ec43734cf40a1be0be77a633a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #0'
+    second: {fileID: 2100000, guid: a49231ec43734cf40a1be0be77a633a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MeterBox_A
+    second: {fileID: 2100000, guid: a49231ec43734cf40a1be0be77a633a3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MeterBox_A_Glass
+    second: {fileID: 2100000, guid: 87ed24e0216f2c64facdb8091c7a8ea0, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages:
+    - 0.25
+    - 0.125
+    - 0.0625
+    - 0.01
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
