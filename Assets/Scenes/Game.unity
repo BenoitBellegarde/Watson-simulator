@@ -3651,7 +3651,8 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100012, guid: 3c97a976b9b00ad478c0d1377ae5862a, type: 3}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 64310898448885242, guid: 9ef0b79f521d2dc41a501116cd2c74f2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9ef0b79f521d2dc41a501116cd2c74f2, type: 3}
 --- !u!4 &212000285 stripped
 Transform:
@@ -14536,6 +14537,25 @@ MonoBehaviour:
   frustumSettings:
     baseSettings: {fileID: 840428897}
     qualitySettings: {fileID: 638375702}
+--- !u!1 &911814016 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1191302706698226, guid: 9ef0b79f521d2dc41a501116cd2c74f2,
+    type: 3}
+  m_PrefabInstance: {fileID: 212000284}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &911814017
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911814016}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7823966, y: 5.5028634, z: 0.33}
+  m_Center: {x: 0, y: -2.7619631, z: -0.04}
 --- !u!1001 &917798910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20348,7 +20368,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1954213415}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1246083760
+--- !u!64 &1246083763
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -40667,7 +40687,12 @@ PrefabInstance:
     - target: {fileID: 419764061243747632, guid: 7cb51ac13d7976b408a2daaea5603b26,
         type: 3}
       propertyPath: m_Height
-      value: 0.52
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 419764061243747632, guid: 7cb51ac13d7976b408a2daaea5603b26,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.199
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cb51ac13d7976b408a2daaea5603b26, type: 3}
