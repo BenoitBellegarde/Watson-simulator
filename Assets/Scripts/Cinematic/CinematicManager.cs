@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.Playables;
 
 public class CinematicManager : MonoBehaviour
 {
@@ -17,11 +17,10 @@ public class CinematicManager : MonoBehaviour
     public NotificationManager notification;
     public ObjectiveManager objective;
     public Camera mainCamera;
+    public PlayableDirector cutscenePlayable;
+    public int frameToSkip;
 
-    private Camera camera1;
-    private Camera camera2;
-    private Camera camera3;
-    private Animation camera1Animation;
+
     private Animator animator;
     private CharacterController characterController;
     private CatMovement playerMovement;
@@ -31,10 +30,6 @@ public class CinematicManager : MonoBehaviour
     void Start()
     {
 
-        camera1 = GameObject.FindWithTag("Camera1").GetComponent<Camera>();
-        camera2 = GameObject.FindWithTag("Camera2").GetComponent<Camera>();
-        camera3 = GameObject.FindWithTag("Camera3").GetComponent<Camera>();
-        camera1Animation = camera1.gameObject.GetComponent<Animation>();
         animator = player.GetComponentInChildren<Animator>();
         characterController = player.GetComponent<CharacterController>();
         playerMovement = player.GetComponent<CatMovement>();
@@ -54,19 +49,6 @@ public class CinematicManager : MonoBehaviour
         
     }
 
-    public void Lvl1_Intro_Camera1()
-    {
-        camera2.enabled = true;
-        camera2.gameObject.GetComponent<Animation>().Play();
-        camera1.enabled = false;  
-    }
-
-    public void Lvl1_Intro_Camera3()
-    {
-        camera1.enabled = true;
-        camera1.gameObject.GetComponent<Animation>().Play();
-        camera3.enabled = false;
-    }
 
     public IEnumerator Lvl1_Presentation()
     {
@@ -75,29 +57,27 @@ public class CinematicManager : MonoBehaviour
         SetCinematicState("on");
 
         // Set cinematic camera pos/rot
-        camera1.transform.position = new Vector3(3.998f,3.719f,0.36f);
+      /*  camera1.transform.position = new Vector3(3.998f,3.719f,0.36f);
         camera1.transform.Rotate(new Vector3(0f, -60f, 20f),Space.World);
-        camera1.enabled = true;
-        mainCamera.enabled = false;
+        camera1.enabled = true;*/
         notification.SetText("Bienvenue dans le monde de Watson");
         notification.ShowNotification();
         yield return new WaitForSeconds(5);
 
         //Objective angle
-        camera1.transform.position = new Vector3(2.85f, 3.25f, 2.88f);
-        camera1.transform.Rotate(new Vector3(0f, -32f, 10f), Space.Self);
+      /*  camera1.transform.position = new Vector3(2.85f, 3.25f, 2.88f);
+        camera1.transform.Rotate(new Vector3(0f, -32f, 10f), Space.Self);*/
         notification.SetText("Prends un malin plaisir a faire un maximum de betises tant que tu es tout seul");
         yield return new WaitForSeconds(5);
 
         //Show notification
-        camera1.transform.position = new Vector3(3.96f, 2.7f, -1.36f);
-        camera1.transform.Rotate(new Vector3(0f, 32f, -10f), Space.Self);
+      /*  camera1.transform.position = new Vector3(3.96f, 2.7f, -1.36f);
+        camera1.transform.Rotate(new Vector3(0f, 32f, -10f), Space.Self);*/
         notification.SetText("N'oublie pas de recuperer des Watson Pieces pour personnaliser Watson plus tard");
         yield return new WaitForSeconds(5);
 
         SetCinematicState("off");
-        mainCamera.enabled = true;
-        camera1.enabled = false;
+       // camera1.enabled = false;
 
         //Show new objective
         objective.SetText("Fais 5 betises");
@@ -160,7 +140,8 @@ public class CinematicManager : MonoBehaviour
     public void CinematicToGameplay()
     {
         SetCinematicState("off");
-        camera2.enabled = false;
+        cutscenePlayable.time = frameToSkip;
+       // camera2.enabled = false;
         mainCamera.enabled = true;
         watsonCoins.SetActive(true);
 
@@ -171,10 +152,10 @@ public class CinematicManager : MonoBehaviour
 
     public void SkipCutscenes()
     {
-        camera3.enabled = false;
+      /*  camera3.enabled = false;
         camera3.gameObject.GetComponent<Animation>().Stop();
         camera2.enabled = false;
-        camera1.enabled = false;
+        camera1.enabled = false;*/
         animator.SetBool("Lie", false);
         CinematicToGameplay();
     }
@@ -185,13 +166,11 @@ public class CinematicManager : MonoBehaviour
         {
             inCinematic = true;
             hudElements.SetActive(false);
-            blackBars.SetActive(true);
             playerMovement.enabled = false;
         }
         else if(state == "off")
         {
             inCinematic = false;
-            blackBars.SetActive(false);
             hudElements.SetActive(true);
             playerMovement.enabled = true;
             pauseMenu.SetActive(true);
