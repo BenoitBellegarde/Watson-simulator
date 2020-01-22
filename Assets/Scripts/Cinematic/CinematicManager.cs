@@ -23,7 +23,7 @@ public class CinematicManager : MonoBehaviour
 
     private Animator animator;
     private CharacterController characterController;
-    private CatMovement playerMovement;
+    private MovementInput playerMovement;
 
 
     // Start is called before the first frame update
@@ -32,7 +32,7 @@ public class CinematicManager : MonoBehaviour
 
         animator = player.GetComponentInChildren<Animator>();
         characterController = player.GetComponent<CharacterController>();
-        playerMovement = player.GetComponent<CatMovement>();
+        playerMovement = player.GetComponent<MovementInput>();
 
         //camera1Animation.Play();
 
