@@ -32,7 +32,7 @@ public class CinematicManager : MonoBehaviour
 
         animator = player.GetComponentInChildren<Animator>();
         characterController = player.GetComponent<CharacterController>();
-        playerMovement = player.GetComponent<MovementInput>();
+        playerMovement = player.GetComponentInChildren<MovementInput>();
 
         //camera1Animation.Play();
 

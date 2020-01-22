@@ -25,8 +25,8 @@ public class MovementInput : MonoBehaviour
     private float verticalVel;
     private Vector3 moveVector;
 
-    private AudioSource audioSource;
-    private ParticleSystem fartParticle;
+    public AudioSource audioSource;
+    public ParticleSystem fartParticle;
     private float sittingTime = 0f;
     private Vector3 moveDirection = Vector3.zero;
     private float altSpeed = 0f;
@@ -35,9 +35,9 @@ public class MovementInput : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        controller = GetComponent<CharacterController>();
-        fartParticle = GetComponentInChildren<ParticleSystem>();
-        audioSource = GetComponent<AudioSource>();
+       // controller = GetComponent<CharacterController>();
+       // fartParticle = GetComponentInChildren<ParticleSystem>();
+      //  audioSource = GetComponent<AudioSource>();
 
         ManageDefaultPosition();
     }
