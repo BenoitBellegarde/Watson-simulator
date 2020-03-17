@@ -186,7 +186,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 2
+    positiveButton: joystick button 0
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -202,7 +202,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 1
+    positiveButton: joystick button 2
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -234,7 +234,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 0
+    positiveButton: joystick button 1
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -250,7 +250,7 @@ InputManager:
     descriptiveName: 
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick button 8
+    positiveButton: joystick button 10
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -355,7 +355,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 3
+    axis: 2
     joyNum: 0
   - serializedVersion: 3
     m_Name: Mouse Y
@@ -371,5 +371,5 @@ InputManager:
     snap: 0
     invert: 1
     type: 2
-    axis: 4
+    axis: 5
     joyNum: 0
